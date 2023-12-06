@@ -1,7 +1,7 @@
 import { Routes } from '@angular/router';
-import { LandingPageComponent } from './landing-page/landing-page.component';
-import { HomePageComponent } from './home-page/home-page.component';
-import { FileNotFoundComponent } from './file-not-found/file-not-found.component';
+import { LandingPageComponent } from './components/landing-page/landing-page.component';
+import { HomePageComponent } from './components/home-page/home-page.component';
+import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
 
 
 export const routes: Routes = [
@@ -10,5 +10,5 @@ export const routes: Routes = [
     { path:'home', component:HomePageComponent},
 
     { path: '', redirectTo: 'login', pathMatch: 'full'},  
-    { path: '**', component: FileNotFoundComponent}
+    { path: '**', component:PageNotFoundComponent}
 ];
