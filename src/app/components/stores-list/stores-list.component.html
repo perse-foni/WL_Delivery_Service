@@ -1,0 +1,15 @@
+<div class="pb-2">
+  <h2>Restaurants</h2>
+</div>
+
+<div class="grid">
+  <div class="row">
+    @for (store of storesList.data; track store.id) {
+    <div class="col d-inline-flex justify-content-center p-1">
+      <app-store [store]="store" />
+    </div>
+    } @empty {
+    <h2>No data available...</h2>
+    }
+  </div>
+</div>
