@@ -1,0 +1,13 @@
+<div class="justify-content-center d-flex mt-5"><h3>Order history</h3></div>
+
+<div
+  class="d-flex flex-wrap justify-content-center mt-3 ms-5 me-5 mb-5"
+  width="1014"
+>
+  @for (history of historyList.data; track history.id) {
+  <app-history-card [history]="history"></app-history-card>
+
+  } @empty {
+  <h2>no data</h2>
+  }
+</div>
