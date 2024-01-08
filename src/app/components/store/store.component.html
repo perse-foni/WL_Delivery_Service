@@ -1,0 +1,22 @@
+<a class="nav-link" routerLink="/store/{{ store.id }}">
+  <div>
+    <div class="card cardAnimation mb-5 bg-body-tertiary rounded" style="width: 25rem">
+      <img src="{{ store.avatar }}" class="card-img-top" alt="..." />
+
+      <div class="card-body">
+        <h3 class="card-title">{{ store.first_name }} {{ store.last_name }}</h3>
+        <p class="card-text text-secondary fs-6">{{ store.email }}</p>
+      </div>
+
+      <ul class="list-group border-top-0 list-group-flush">
+        <li class="list-group-item text-info fs-6">Minimum order (7.00) €</li>
+        <li class="list-group-item text-info fs-6"> (8.5)
+          <img src="../../../assets/icons/reviews.svg" class="svgIcon" />
+        </li>
+        <li class="list-group-item text-info fs-6">(0.50) €
+          <img src="../../../assets/icons/delivery.svg" class="svgIcon">
+        </li>
+      </ul>
+    </div>
+  </div>
+</a>
