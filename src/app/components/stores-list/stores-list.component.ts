@@ -1,7 +1,7 @@
 import { Component, inject } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { StoreComponent } from '../store/store.component';
-import { DataService } from '../../service/data.service';
+import { DataService } from '../../services/store.service';
 
 @Component({
   selector: 'app-stores-list',
@@ -16,7 +16,7 @@ export class StoresListComponent {
   service = inject(DataService)
 
   ngOnInit() {
-    this.service.getData().subscribe({
+    this.service.getStore().subscribe({
       next: response =>this.storesList = response
     })
   }

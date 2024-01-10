@@ -1,7 +1,7 @@
 import { Component, OnInit, inject } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterOutlet } from '@angular/router';
-import { DataService } from '../../service-history.service';
+import { DataService } from '../../services/service-history.service';
 import { HistoryCardComponent } from '../history-card/history-card.component';
 import { HttpClientModule } from '@angular/common/http';
 
