@@ -1,6 +1,6 @@
 import { Component, inject } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { DataService } from '../../services/store.service';
+import { CategoryService } from '../../services/category.service';
 import { CategoryComponent } from '../category/category.component';
 
 
@@ -14,12 +14,11 @@ import { CategoryComponent } from '../category/category.component';
 export class CategoriesListComponent {
  
   categoriesList: any;
-  service = inject(DataService)
+  service = inject(CategoryService)
 
   ngOnInit() {
-    this.service.getStore().subscribe({
+    this.service.getCategory().subscribe({
       next: response => this.categoriesList = response
     })
   }
-
 }

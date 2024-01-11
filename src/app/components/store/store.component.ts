@@ -1,6 +1,7 @@
 import { Component, Input } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterLink } from '@angular/router';
+import { Store } from '../interfaces/store';
 
 @Component({
   selector: 'app-store',
@@ -10,5 +11,11 @@ import { RouterLink } from '@angular/router';
   styleUrl: './store.component.css'
 })
 export class StoreComponent {
-  @Input() store: any;
+
+  @Input() store: Store = {
+    id: 0,
+    name: '',
+    category: '',
+    address: ''
+  };
 }
