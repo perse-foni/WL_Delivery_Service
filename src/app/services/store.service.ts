@@ -2,7 +2,7 @@ import { HttpClient } from '@angular/common/http';
 import { Injectable, inject } from '@angular/core';
 import { throwError } from 'rxjs';
 import { catchError, retry } from 'rxjs/operators';
-import { Store } from '../models/interfaces/store';
+import { Store } from '../models/store';
 
 @Injectable({
   providedIn: 'root',

@@ -1,7 +1,7 @@
 import { Component, Input } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterLink } from '@angular/router';
-import { Store } from '../../models/interfaces/store';
+import { Store } from '../../models/store';
 
 @Component({
   selector: 'app-store',
