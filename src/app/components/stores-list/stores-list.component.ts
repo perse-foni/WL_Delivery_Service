@@ -2,7 +2,7 @@ import { Component, inject } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { StoreComponent } from '../store/store.component';
 import { StoreService } from '../../services/store.service';
-import { Store } from '../interfaces/store';
+import { Store } from '../../models/interfaces/store';
 
 @Component({
   selector: 'app-stores-list',
