@@ -2,20 +2,21 @@ import { HttpClient } from '@angular/common/http';
 import { Injectable, inject } from '@angular/core';
 import { throwError } from 'rxjs';
 import { catchError, retry } from 'rxjs/operators';
+import { Store } from '../models/store';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
-export class DataService {
-
-  http = inject(HttpClient)
-  url = 'https://reqres.in/api/users';
+export class StoreService {
+  http = inject(HttpClient);
+  endpointUrl = 'assets/json-data/stores.json';
 
   getStore() {
-    return this.http.get(this.url)
-    .pipe(
+    return this.http.get<Store[]>(this.endpointUrl).pipe(
       retry(1),
-      catchError(error => throwError(() => `Oh oh.. Something went wrong ${error.status}`))
+      catchError((error) =>
+        throwError(() => `Oh oh.. Something went wrong ${error.status}`)
+      )
     );
   }
 }

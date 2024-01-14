@@ -1,11 +1,11 @@
 <a class="nav-link" routerLink="/store/{{ store.id }}">
   <div>
     <div class="card cardAnimation mb-5 bg-body-tertiary rounded" style="width: 25rem">
-      <img src="{{ store.avatar }}" class="card-img-top" alt="..." />
+      <img src="..." class="card-img-top" alt="..." />
 
       <div class="card-body">
-        <h3 class="card-title">{{ store.first_name }} {{ store.last_name }}</h3>
-        <p class="card-text text-secondary fs-6">{{ store.email }}</p>
+        <h3 class="card-title">{{ store.name }}</h3>
+        <p class="card-text text-secondary fs-6">{{ store.category  }}</p>
       </div>
 
       <ul class="list-group border-top-0 list-group-flush">
