@@ -1,8 +1,8 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterOutlet } from '@angular/router';
-import { RegistrationFormComponent } from '../registration-page/registration-form/registration-form.component';
-import { LoginFormComponent } from './login-form/login-form.component';
+import { RegistrationFormComponent } from '../../registration-page/registration-form/registration-form.component';
+import { LoginFormComponent } from '../login-form/login-form.component';
 
 @Component({
   selector: 'app-landing-page',
