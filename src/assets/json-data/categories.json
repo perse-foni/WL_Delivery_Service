@@ -1,0 +1,42 @@
+[
+    {
+        "id": 1,
+        "category": "Burger",
+        "avatar": "https://simply-delicious-food.com/wp-content/uploads/2015/07/Bacon-and-cheese-burgers-3-500x500.jpg"
+    },
+    {
+        "id": 2,
+        "category": "Donuts",
+        "avatar": "https://www.cookingclassy.com/wp-content/uploads/2021/03/baked-donuts-02-500x500.jpg"
+    },
+    {
+        "id": 3,
+        "category": "Asian",
+        "avatar": "https://hot-thai-kitchen.com/wp-content/uploads/2022/05/cashew-chicken-sq.jpg"
+    },
+    {
+        "id": 4,
+        "category": "Coffee",
+        "avatar": "https://www.acouplecooks.com/wp-content/uploads/2021/08/Cafe-Au-Lait-001s.jpg"
+    },
+    {
+        "id": 5,
+        "category": "Indian",
+        "avatar": "https://www.modernhoney.com/wp-content/uploads/2019/07/Indian-Butter-Chicken-17-500x500.jpg"
+    },
+    {
+        "id": 6,
+        "category": "Mexican",
+        "avatar": "https://insanelygoodrecipes.com/wp-content/uploads/2022/10/Homemade-Vegan-Mexican-Beef-Tacos-with-Herbs-500x500.jpg"
+    },
+    {
+        "id": 7,
+        "category": "Fast Food",
+        "avatar": "https://fit-flavors.com/cdn/shop/articles/fast_food_1200x.png?v=1654877372"
+    },
+    {
+        "id": 8,
+        "category": "Breakfast",
+        "avatar": "https://grantourismotravels.com/wp-content/uploads/2023/02/Breakfast-Tostadas-Recipe-with-Fried-Eggs-Refried-Beans-Pickles-Copyright-2023-Terence-Carter-Grantourismo-T-500x500.jpg"
+    }
+]
