@@ -4,9 +4,9 @@
 
 <div class="grid">
   <div class="row ">
-    @for (category of categoriesList.data; track category.id) {
-        <div class="col d-inline-flex justify-content-center p-1">
-            <app-category [category]="category" [categoriesList]="categoriesList" />
+    @for (category of categoriesList; track category.id) {
+            <div class="col d-inline-flex justify-content-center p-1">
+              <app-category [category]="category" />
         </div>
     } @empty {
     <h2>No data available...</h2>
