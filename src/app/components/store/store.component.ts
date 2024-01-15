@@ -16,5 +16,8 @@ export class StoreComponent {
     name: '',
     category: '',
     address: '',
+    description: '',
+    avatar: '',
+    rating: 0
   };
 }
