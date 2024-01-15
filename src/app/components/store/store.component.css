@@ -8,8 +8,17 @@
     box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
 }
 
+.text-wrap {
+    display: flex;
+    justify-content: space-between;
+}
+
+.rating-wrap {
+    display: flex;
+}
 
 .svgIcon {
-    padding-bottom: 2px;
-    filter: invert(61%) sepia(98%) saturate(1102%) hue-rotate(146deg) brightness(96%) contrast(97%);
+    padding-bottom: 15px;
+    filter: invert(84%) sepia(46%) saturate(1160%) hue-rotate(347deg) brightness(98%) contrast(107%);
+    padding-left: 7px;
 }
