@@ -4,6 +4,9 @@
         "name": "McDonald's",
         "category": "FAST_FOOD",
         "address": "Syntagma 15",
+        "description": "I'm lovin' it!",
+        "avatar": "https://imageproxy.wolt.com/mes-image/9dda58a4-a474-4e8e-a9ba-9da30a3a0d03/b7e18341-6f6e-413c-a3ee-93e31247b2a3",
+        "rating":"4",
         "products": [
             {
                 "id": "1",
@@ -72,6 +75,9 @@
         "name": "StreetWok",
         "category": "ASIAN",
         "address": "Glyfada Str. 203",
+        "description": "Asian Bites!",
+        "avatar": "https://imageproxy.wolt.com/venue/613a04789f1e5058b81ab307/064ccbfe-1b70-11ec-b085-0efd9af55f85__48a5981.jpg",
+        "rating":"4.5",
         "products": [
             {
                 "id": "11",
@@ -116,6 +122,9 @@
         "name": "Nanou Donuts House",
         "category": "DONUTS",
         "address": "Ampelokipous 23rd Av.",
+        "description": "Fresh authentic Greek donuts!",
+        "avatar": "https://imageproxy.wolt.com/mes-image/5be9927a-59fe-4b7a-b1e7-6db52e7e2b00/c86f3085-5bdb-42e3-a340-1e7da8d72b73",
+        "rating":"4.3",
         "products": [
             {
                 "id": "17",
