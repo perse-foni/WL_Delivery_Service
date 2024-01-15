@@ -1,0 +1,15 @@
+<div class="pb-2">
+    <h2>Most famous</h2>
+  </div>
+  
+  <div class="grid">
+    <div class="row ">
+      @for (famousStore of mostFamousStores; track famousStore.id) {
+          <div class="col d-inline-flex justify-content-center p-1">
+              <app-most-famous-store [famousStore]="famousStore" />
+          </div>
+      } @empty {
+      <h2>No data available...</h2>
+      }
+    </div>
+  </div>
