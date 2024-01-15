@@ -3,4 +3,7 @@ export interface Store {
   name: string;
   category: string;
   address: string;
+  description: string;
+  avatar: string;
+  rating: number;
 }
