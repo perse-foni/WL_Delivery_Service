@@ -1,17 +1,18 @@
 import { Component, Input } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterLink } from '@angular/router';
-import { Store } from '../../models/store';
+import { MostFamous } from '../../most-famous';
 
 @Component({
-  selector: 'app-store',
+  selector: 'app-most-famous-store',
   standalone: true,
   imports: [CommonModule, RouterLink],
-  templateUrl: './store.component.html',
-  styleUrl: './store.component.css',
+  templateUrl: './most-famous-store.component.html',
+  styleUrl: './most-famous-store.component.css'
 })
-export class StoreComponent {
-  @Input() store: Store = {
+export class MostFamousStoreComponent {
+
+  @Input() famousStore: MostFamous = {
     id: 0,
     name: '',
     category: '',
