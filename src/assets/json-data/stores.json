@@ -1,167 +1,757 @@
 [
-    {
-        "id": 1,
-        "name": "McDonald's",
-        "category": "FAST_FOOD",
-        "address": "Syntagma 15",
-        "description": "I'm lovin' it!",
-        "avatar": "https://imageproxy.wolt.com/mes-image/9dda58a4-a474-4e8e-a9ba-9da30a3a0d03/b7e18341-6f6e-413c-a3ee-93e31247b2a3",
-        "rating":"4",
-        "products": [
-            {
-                "id": "1",
-                "name": "Big Mac",
-                "category": "BURGERS",
-                "price" : 4.99
-            },
-            {
-                "id": "2",
-                "name": "Crispy McBacon",
-                "category": "BURGERS",
-                "price" : 3.99
-            },
-            {
-                "id": "3",
-                "name": "Deluxe Burger",
-                "category": "BURGERS",
-                "price" : 2.99
-            },
-            {
-                "id": "4",
-                "name": "Single Big Tasty Chicken Bacon",
-                "category": "BURGERS",
-                "price" : 2.79
-            },
-            {
-                "id": "5",
-                "name": "Chicken McNuggets",
-                "category": "NUGGETS",
-                "price" : 3.99
-            },
-            {
-                "id": "6",
-                "name": "Caesar Salad with crispy chicken",
-                "category": "SALADS",
-                "price" : 4.50
-            },
-            {
-                "id": "7",
-                "name": "Caesar Salad with grilled chicken",
-                "category": "SALADS",
-                "price" : 4.50
-            },
-            {
-                "id": "8",
-                "name": "Side Salad",
-                "category": "SALADS",
-                "price" : 2.50
-            },
-            {
-                "id": "9",
-                "name": "Onion Rings",
-                "category": "FRIES_&_SIDES",
-                "price" : 0.99
-            },
-            {
-                "id": "10",
-                "name": "Deluxe Fries",
-                "category": "FRIES_&_SIDES",
-                "price" : 1.20
-            }
-        ]
-    },
-    {
-        "id": 2,
-        "name": "StreetWok",
-        "category": "ASIAN",
-        "address": "Glyfada Str. 203",
-        "description": "Asian Bites!",
-        "avatar": "https://imageproxy.wolt.com/venue/613a04789f1e5058b81ab307/064ccbfe-1b70-11ec-b085-0efd9af55f85__48a5981.jpg",
-        "rating":"4.5",
-        "products": [
-            {
-                "id": "11",
-                "name": "Pork Noodles with teriyaki",
-                "category": "NOODLES",
-                "price" : 7.20
-            },
-            {
-                "id": "12",
-                "name": "Chicken Egg Noodles with sweet chili",
-                "category": "NOODLES",
-                "price" : 8.20
-            },
-            {
-                "id": "13",
-                "name": "Beef Rice Noodles with cantonese",
-                "category": "NOODLES",
-                "price" : 7.20
-            },
-            {
-                "id": "14",
-                "name": "Shrimp White Rice with Coconut Curry",
-                "category": "RICE",
-                "price" : 8.20
-            },
-            {
-                "id": "15",
-                "name": "Mushroom Brown Rice with satay",
-                "category": "RICE",
-                "price" : 7.20
-            },
-            {
-                "id": "16",
-                "name": "Mixed ingredients with pineapple, brocoli, baby corn and black mushrooms",
-                "category": "OTHER",
-                "price" : 5.20
-            }
-        ]
-    },
-    {
-        "id": 3,
-        "name": "Nanou Donuts House",
-        "category": "DONUTS",
-        "address": "Ampelokipous 23rd Av.",
-        "description": "Fresh authentic Greek donuts!",
-        "avatar": "https://imageproxy.wolt.com/mes-image/5be9927a-59fe-4b7a-b1e7-6db52e7e2b00/c86f3085-5bdb-42e3-a340-1e7da8d72b73",
-        "rating":"4.3",
-        "products": [
-            {
-                "id": "17",
-                "name": "Cinnamon Donut",
-                "category": "DONUT",
-                "price" : 2.20
-            },
-            {
-                "id": "18",
-                "name": "Donut Bavaria",
-                "category": "DONUT",
-                "price" : 1.99
-            },
-            {
-                "id": "19",
-                "name": "Blackberry Cronut",
-                "category": "CRONUT",
-                "price" : 1.50
-            },
-            {
-                "id": "20",
-                "name": "Nanou Burger",
-                "category": "BURGER",
-                "price" : 4.30
-            },
-            {
-                "id": "21",
-                "name": "Donut Delizioso",
-                "category": "DONUT",
-                "price" : 2.50
-            },
-            {
-                "id": "22",
-                "name": "Donut Oreo",
-                "category": "DONUT",
-                "price" : 1.99
-            }
-        ]
-    }
+  {
+    "id": 1,
+    "name": "McDonald's",
+    "category": "FAST_FOOD",
+    "address": "Syntagma 15",
+    "description": "I'm lovin' it!",
+    "avatar": "https://imageproxy.wolt.com/mes-image/9dda58a4-a474-4e8e-a9ba-9da30a3a0d03/b7e18341-6f6e-413c-a3ee-93e31247b2a3",
+    "rating": "4",
+    "products": [
+      {
+        "id": "1",
+        "name": "Big Mac",
+        "category": "BURGERS",
+        "price": 4.99,
+        "description": "Fluffy bun with delicious burger, bacon, grated cheese, tomato, lettuce and mayonnaise",
+        "avatar": "https://imageproxy.wolt.com/menu/menu-images/5f031548052c1f9d72024d81/353d3ee4-f01c-11ed-b923-72378383b646_dh_1010.jpg"
+      },
+      {
+        "id": "2",
+        "name": "Crispy McBacon",
+        "category": "BURGERS",
+        "price": 3.99,
+        "description": "Fluffy bun with the delicious combination of burger with melted cheddar cheese and fried organic egg, crispy bacon, lettuce, mayonnaise and Hellmann's Original BBQ sauce. The ultimate hangover.",
+        "avatar": "https://imageproxy.wolt.com/menu/menu-images/5f031548052c1f9d72024d81/3560e6b4-f01c-11ed-b923-72378383b646_dh_1034.jpg"
+      },
+      {
+        "id": "3",
+        "name": "Deluxe Burger",
+        "category": "BURGERS",
+        "price": 2.99,
+        "description": "",
+        "avatar": "https://imageproxy.wolt.com/menu/menu-images/5f031548052c1f9d72024d81/3544940a-f01c-11ed-b923-72378383b646_dh_1020.jpg"
+      },
+      {
+        "id": "4",
+        "name": "Single Big Tasty Chicken Bacon",
+        "category": "BURGERS",
+        "price": 2.79,
+        "description": "Extreme delight with crispy breaded chicken fillet, tomato, lettuce and sweet chili mayo sauce",
+        "avatar": "https://imageproxy.wolt.com/menu/menu-images/5f031548052c1f9d72024d81/35396cb0-f01c-11ed-b923-72378383b646_dh_1098.jpg"
+      },
+      {
+        "id": "5",
+        "name": "Chicken McNuggets",
+        "category": "NUGGETS",
+        "price": 3.99,
+        "description": "Breaded fillets of juicy chicken breast with mustard sauce.",
+        "avatar": "https://imageproxy.wolt.com/menu/menu-images/5f031548052c1f9d72024d81/356d0c5a-f01c-11ed-b923-72378383b646_dh_1194.jpg"
+      },
+      {
+        "id": "6",
+        "name": "Caesar Salad with crispy chicken",
+        "category": "SALADS",
+        "price": 4.5,
+        "description": "Salad with a variety of fresh vegetables, cherry tomatoes, cheese, crispy chicken breast fillet, croutons flavored with garlic & various herbs & Caesar dressing",
+        "avatar": "https://imageproxy.wolt.com/menu/menu-images/5f031548052c1f9d72024d81/35881f5e-f01c-11ed-b923-72378383b646_dh_4090.jpg"
+      },
+      {
+        "id": "7",
+        "name": "Caesar Salad with grilled chicken",
+        "category": "SALADS",
+        "price": 4.5,
+        "description": "Salad with a variety of fresh vegetables, cherry tomatoes, cheese, grilled chicken breast fillet, garlic-flavored crouton & various herbs & Ceasar dressing",
+        "avatar": "https://imageproxy.wolt.com/menu/menu-images/5f031548052c1f9d72024d81/3586de8c-f01c-11ed-b923-72378383b646_dh_4080.jpg"
+      },
+      {
+        "id": "8",
+        "name": "Side Salad",
+        "category": "SALADS",
+        "price": 2.5,
+        "description": "Salad with a variety of fresh vegetables, cherry tomatoes & balsamic dressing",
+        "avatar": "https://imageproxy.wolt.com/menu/menu-images/5f031548052c1f9d72024d81/3589450a-f01c-11ed-b923-72378383b646_dh_4095.jpg"
+      },
+      {
+        "id": "9",
+        "name": "Onion Rings",
+        "category": "FRIES_&_SIDES",
+        "price": 0.99,
+        "description": "",
+        "avatar": "https://imageproxy.wolt.com/menu/menu-images/5fac04051d09d267028a5a10/407a9ce2-08aa-11ee-9cd7-cae699d9c950_dh_1187.jpg"
+      },
+      {
+        "id": "10",
+        "name": "Deluxe Fries",
+        "category": "FRIES_&_SIDES",
+        "price": 1.2,
+        "description": "Crispy, slightly spicy potatoes",
+        "avatar": "https://imageproxy.wolt.com/menu/menu-images/5f031548052c1f9d72024d81/357ab2ba-f01c-11ed-b923-72378383b646_dh_3110.jpg"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "name": "StreetWok",
+    "category": "ASIAN",
+    "address": "Glyfada Str. 203",
+    "description": "Asian Bites!",
+    "avatar": "https://imageproxy.wolt.com/venue/613a04789f1e5058b81ab307/064ccbfe-1b70-11ec-b085-0efd9af55f85__48a5981.jpg",
+    "rating": "4.5",
+    "products": [
+      {
+        "id": "11",
+        "name": "Pork Noodles with teriyaki",
+        "category": "NOODLES",
+        "price": 7.2,
+        "description": "With mendake noodles, sautéed pork, cabbage, green and red pepper, carrot, mushroom, oyster sauce, soya sauce, lemon sauce, chives, sesame seeds, salt and pepper",
+        "avatar": "https://imageproxy.wolt.com/menu/menu-images/shared/e713d0bc-39da-11ee-857c-4ab0564c2476_product_15.jpg"
+      },
+      {
+        "id": "12",
+        "name": "Chicken Egg Noodles with sweet chili",
+        "category": "NOODLES",
+        "price": 8.2,
+        "description": "Noodles with grilled chicken, sweet chili, tricolor peppers, ginger, teriyaki sauce, carrots, onion, red cabbage and sesame. Energy 498Kcal | Protein 34gr | Carbohydrates 77gr | Fat 6gr",
+        "avatar": "https://imageproxy.wolt.com/menu/menu-images/633eb45241d8f1a688bc8271/9ef37a00-7803-11ee-a443-1e212bbf9ec7_image_recipe_cd7b6dbb_3151_4abb_b067_fd9faf85b28a.jpg"
+      },
+      {
+        "id": "13",
+        "name": "Beef Rice Noodles with cantonese",
+        "category": "NOODLES",
+        "price": 7.2,
+        "description": "Basmati rice with beef and Indian spices. Medium hot",
+        "avatar": "https://imageproxy.wolt.com/menu/menu-images/5f7c8f847a186c4c1468d1ab/d91effc2-0a17-11eb-8850-c6d974268644_img_3278.jpeg"
+      },
+      {
+        "id": "14",
+        "name": "Shrimp White Rice with Coconut Curry",
+        "category": "RICE",
+        "price": 8.2,
+        "description": "With egg, shrimps, shiitake mushroom, onion, mixed sesame and sweet and oyster sauce",
+        "avatar": "https://imageproxy.wolt.com/menu/menu-images/606d691d6315b15fa3298f7f/81e4d66a-9846-11eb-8d4f-a20169866f11_f69c4f82_0a17_11eb_ba9b_2ac21f453d71_img_3281.jpeg"
+      },
+      {
+        "id": "15",
+        "name": "Mushroom Brown Rice with satay",
+        "category": "RICE",
+        "price": 7.2,
+        "description": "Jasmine fried rice, Korean cabbage kimchi, egg, onion, carrot, seaweed and chives",
+        "avatar": "https://imageproxy.wolt.com/menu/menu-images/5fb28da945fd0bb91735fdcf/23aa674e-f187-11ed-a594-3298fd0e6010_stick7.jpg"
+      },
+      {
+        "id": "16",
+        "name": "Mixed ingredients with pineapple, brocoli, baby corn and black mushrooms",
+        "category": "OTHER",
+        "price": 5.2,
+        "description": "",
+        "avatar": "https://imageproxy.wolt.com/menu/menu-images/shared/014cff62-8f76-11ee-80f6-e2a3a2ff094c_f3757954_d007_11ea_ab50_ba8a57b6f9ef_energy_bowls_vegan_goodness225.jpeg"
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Nanou Donuts House",
+    "category": "DONUTS",
+    "address": "Ampelokipous 23rd Av.",
+    "description": "Fresh authentic Greek donuts!",
+    "avatar": "https://imageproxy.wolt.com/mes-image/5be9927a-59fe-4b7a-b1e7-6db52e7e2b00/c86f3085-5bdb-42e3-a340-1e7da8d72b73",
+    "rating": "4.3",
+    "products": [
+      {
+        "id": "17",
+        "name": "Cinnamon Donut",
+        "category": "DONUT",
+        "price": 2.2,
+        "description": "",
+        "avatar": "https://imageproxy.wolt.com/menu/menu-images/60212f9d7ce69d011be841a9/cac9c81a-6a0e-11eb-aee1-06cafe0f2696_______.jpeg"
+      },
+      {
+        "id": "18",
+        "name": "Donut Bavaria",
+        "category": "DONUT",
+        "price": 1.99,
+        "description": "",
+        "avatar": "https://imageproxy.wolt.com/menu/menu-images/60212f9d7ce69d011be841a9/325a091e-6a0e-11eb-9b1d-2e1c6fa3fd71_____________________________bavaria.jpeg"
+      },
+      {
+        "id": "19",
+        "name": "Blackberry Cronut",
+        "category": "CRONUT",
+        "price": 1.5,
+        "description": "",
+        "avatar": "https://imageproxy.wolt.com/menu/menu-images/60212f9d7ce69d011be841a9/edd36f60-6a0d-11eb-a932-822f9e962b76_cronut__________.jpeg"
+      },
+      {
+        "id": "20",
+        "name": "Nanou Burger",
+        "category": "BURGER",
+        "price": 4.3,
+        "description": "With a patty, cheese, ketchup sauce and mustard",
+        "avatar": "https://imageproxy.wolt.com/menu/menu-images/60212f9d7ce69d011be841a9/5609b610-6a0f-11eb-9aab-1a595d9ac4f6_________________.jpeg"
+      },
+      {
+        "id": "21",
+        "name": "Donut Delizioso",
+        "category": "DONUT",
+        "price": 2.5,
+        "description": "With Bueno",
+        "avatar": "https://imageproxy.wolt.com/menu/menu-images/60212f9d7ce69d011be841a9/baaafb20-6a0e-11eb-a36e-be42c1962fa9___________________________bueno.jpeg"
+      },
+      {
+        "id": "22",
+        "name": "Donut Oreo",
+        "category": "DONUT",
+        "price": 1.99,
+        "description": "",
+        "avatar": "https://imageproxy.wolt.com/menu/menu-images/60212f9d7ce69d011be841a9/dcfe0e9c-6a0e-11eb-a3af-366ef4a691e8_____________________________________________________.jpeg"
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "name": "Coffee Lab",
+    "category": "COFFEE",
+    "address": "Athinaion 15",
+    "description": "Croissants at their best...",
+    "avatar": "https://imageproxy.wolt.com/mes-image/35d65592-ec79-423b-8921-ecb09cae52ba/a9bd9221-1631-4a00-92e4-5bde7b171e95",
+    "rating": "4.5",
+    "products": [
+      {
+        "id": "23",
+        "name": "Espresso",
+        "category": "COFFEE",
+        "price": 1.6,
+        "description": "",
+        "avatar": "https://imageproxy.wolt.com/menu/menu-images/61b0687101d4afcec78eadb5/552489be-4a00-11ed-a829-820d365f7e56_espresso.jpeg"
+      },
+      {
+        "id": "24",
+        "name": "Cappuccino",
+        "category": "COFFEE",
+        "price": 1.9,
+        "description": "",
+        "avatar": "https://imageproxy.wolt.com/menu/menu-images/61b0687101d4afcec78eadb5/e2e88494-4a00-11ed-89d4-1e2277c34cf0_cappuccino.jpeg"
+      },
+      {
+        "id": "25",
+        "name": "Greek Coffee",
+        "category": "COFFEE",
+        "price": 1.7,
+        "description": "",
+        "avatar": "https://imageproxy.wolt.com/menu/menu-images/61b0687101d4afcec78eadb5/2f78a4fa-4a02-11ed-a31f-368c8bb1fc1d_ellhnikos_monos.jpeg"
+      },
+      {
+        "id": "26",
+        "name": "Caramel Macchiato",
+        "category": "COFFEE",
+        "price": 2.6,
+        "description": "",
+        "avatar": "https://imageproxy.wolt.com/menu/menu-images/61b0687101d4afcec78eadb5/7da96326-4a02-11ed-b46b-0274bb55a882_latte_caramel.jpeg"
+      },
+      {
+        "id": "27",
+        "name": "Iced Latte",
+        "category": "COFFEE",
+        "price": 2.6,
+        "description": "",
+        "avatar": "https://imageproxy.wolt.com/menu/menu-images/61b0687101d4afcec78eadb5/a06fa842-4a03-11ed-88a4-0274bb55a882_vegan_latte_hot.jpeg"
+      },
+      {
+        "id": "28",
+        "name": "Caramel Macchiato",
+        "category": "COFFEE",
+        "price": 2.6,
+        "description": "",
+        "avatar": "https://imageproxy.wolt.com/menu/menu-images/61b0687101d4afcec78eadb5/7da96326-4a02-11ed-b46b-0274bb55a882_latte_caramel.jpeg"
+      },
+      {
+        "id": "29",
+        "name": "Chamomile",
+        "category": "TEA",
+        "price": 1.7,
+        "description": "",
+        "avatar": "https://imageproxy.wolt.com/menu/menu-images/61b0687101d4afcec78eadb5/0aae7fbc-4a04-11ed-8072-dee56d2038e4_xamomhli.jpeg"
+      },
+      {
+        "id": "30",
+        "name": "Iced Tea Peach",
+        "category": "TEA",
+        "price": 2.2,
+        "description": "",
+        "avatar": "https://imageproxy.wolt.com/menu/menu-images/61b0687101d4afcec78eadb5/1684541a-4a04-11ed-a82e-424df39b4d10_iced_tea_rodakino.jpeg"
+      },
+      {
+        "id": "31",
+        "name": "Natural Orange Juice",
+        "category": "JUICE",
+        "price": 2.4,
+        "description": "",
+        "avatar": "https://imageproxy.wolt.com/menu/menu-images/61b0687101d4afcec78eadb5/af4ce91e-4a04-11ed-9351-fe06271f6132_xymos_portokali.jpeg"
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "name": "Gregory",
+    "category": "COFFEE",
+    "address": "Agisilaou 222",
+    "description": "The ones who make your day, you know by name!",
+    "avatar": "https://imageproxy.wolt.com/mes-image/5be9a33c-b685-4a01-963b-2d8368f4e898/b2a3b216-d22c-4744-a16f-594d7ac64c2a",
+    "rating": "4.5",
+    "products": [
+      {
+        "id": "32",
+        "name": "Cappuccino Freddo",
+        "category": "COFFEE",
+        "price": 2.5,
+        "description": "Freddo Cappuccino is the ideal cold coffee for milk lovers. An absolute tasty combination of espresso and velvety milk foam",
+        "avatar": "https://imageproxy.wolt.com/menu/menu-images/62bee2d7c47aacfde5498c59/0e1ac00e-fe03-11ec-a9cb-323e1cdecdee_10001135__1_.jpeg"
+      },
+      {
+        "id": "33",
+        "name": "Iced Latte",
+        "category": "COFFEE",
+        "price": 2.8,
+        "description": "Cold coffee with a single shot of espresso, cold milk and ice, for a result with an intense milk taste",
+        "avatar": "https://imageproxy.wolt.com/menu/menu-images/62bee2d7c47aacfde5498c59/4b5410f6-fe03-11ec-bcf5-ea8d1d21780f_10013361.jpeg"
+      },
+      {
+        "id": "34",
+        "name": "Americano",
+        "category": "COFFEE",
+        "price": 2.1,
+        "description": "Hot espresso coffee mixed harmoniously with hot water for an intense taste that lasts longer",
+        "avatar": "https://imageproxy.wolt.com/menu/menu-images/62bee2d7c47aacfde5498c59/623c6382-fe02-11ec-9581-e26a1261a932_10013451.jpeg"
+      },
+      {
+        "id": "35",
+        "name": "Fresh Orange Juice",
+        "category": "JUICE",
+        "price": 2.4,
+        "description": "Freshly squeezed orange juice to fill you with energy! Make it unique and take off by adding cranberries, hazelnuts or cinnamon",
+        "avatar": "https://imageproxy.wolt.com/menu/menu-images/62bee2d7c47aacfde5498c59/b586a55c-fdee-11ec-979b-e2c8a1c5691e_10001110.jpeg"
+      },
+      {
+        "id": "36",
+        "name": "Seasonal Strawberry and Orange Juice",
+        "category": "JUICE",
+        "price": 2.8,
+        "description": "With strawberry and orange, make your juice unique by adding cranberries, hazelnuts and cinnamon",
+        "avatar": "https://imageproxy.wolt.com/menu/menu-images/6294a3086f3800ab2e0a890a/59322ca8-7af9-11ed-ad4c-0a12efae4af1_10012473.jpeg"
+      },
+      {
+        "id": "37",
+        "name": "Carob Mezzaluna with Turkey",
+        "category": "SANDWICH",
+        "price": 3.8,
+        "description": "On carob mezzaluna bread with fresh tomato, lola and a mildly spicy sauce with Kalamata Papadimitriou mustard! You will wait for the moment to meet it!",
+        "avatar": "https://imageproxy.wolt.com/menu/menu-images/63989e460ce40af5c1f59630/105371c0-7181-11ee-b171-6e06f58a9d78_10018978.jpg"
+      },
+      {
+        "id": "38",
+        "name": "Wholemeal Turkey Baguette",
+        "category": "SANDWICH",
+        "price": 3.4,
+        "description": "With edam cheese, fresh tomato, lola and mayonnaise dressing. Wholemeal turkey baguette, for those of you looking for balance in your diet",
+        "avatar": "https://imageproxy.wolt.com/menu/menu-images/62bee2d7c47aacfde5498c59/55e78b7c-fe00-11ec-ac7e-323e1cdecdee_10012613.jpeg"
+      },
+      {
+        "id": "39",
+        "name": "Rounded Bread with Sesame Wholemeal Turkey and Arla",
+        "category": "SANDWICH",
+        "price": 2.2,
+        "description": "My favorite stuffed with smoked turkey and Arla cream cheese on a wholemeal bun. For you who watch your breakfast",
+        "avatar": "https://imageproxy.wolt.com/menu/menu-images/62bee2d7c47aacfde5498c59/5cdd5348-fe01-11ec-826d-421e3ba788ee_10015954_1.jpeg"
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "name": "Naanwich",
+    "category": "INDIAN",
+    "address": "Ermou 115",
+    "description": "Unique Indian dishes!",
+    "avatar": "https://imageproxy.wolt.com/venue/5f291b41cf039c1a82d94db4/68a90046-d644-11ea-b90d-166297db8e86__z3a7456_edit.jpg",
+    "rating": "4.1",
+    "products": [
+      {
+        "id": "40",
+        "name": "Jeera Rice",
+        "category": "RICE",
+        "price": 6,
+        "description": "Basmati rice with cumin seeds",
+        "avatar": "https://imageproxy.wolt.com/menu/menu-images/5f291bd4741554e3b0c5a4fb/f695f01a-d646-11ea-a39e-ca614b1b2d74_18.jpeg"
+      },
+      {
+        "id": "41",
+        "name": "Egg Fried Rice (Slightly Spicy)",
+        "category": "RICE",
+        "price": 7.5,
+        "description": "Basmati rice cooked with egg",
+        "avatar": "https://imageproxy.wolt.com/menu/menu-images/5f291bd4741554e3b0c5a4fb/ffce0280-d646-11ea-aeea-62a1586584d4_19.jpeg"
+      },
+      {
+        "id": "42",
+        "name": "Naan Masala",
+        "category": "WRAP",
+        "price": 7.0,
+        "description": "Freshly baked naan bread filled with chicken tikka masala, lettuce, fresh cilantro and raita",
+        "avatar": "https://imageproxy.wolt.com/menu/menu-images/5f291bd4741554e3b0c5a4fb/6e06190e-d647-11ea-91b7-821e26afbded_28.jpeg"
+      },
+      {
+        "id": "43",
+        "name": "Naan Tikka",
+        "category": "WRAP",
+        "price": 7.0,
+        "description": "Freshly baked naan with chicken tikka pieces, lettuce, onion, tomato, cucumber and yogurt mint sauce",
+        "avatar": "https://imageproxy.wolt.com/menu/menu-images/5f291bd4741554e3b0c5a4fb/791611b4-d647-11ea-a5b1-d6710e02b6c5_29.jpeg"
+      },
+      {
+        "id": "44",
+        "name": "Chicken Tandoori (Slightly Spicy)",
+        "category": "CHICKEN",
+        "price": 10.0,
+        "description": "Two tender chicken legs marinated with yoghurt sauce and special tandoori spices. Served with mint sauce",
+        "avatar": "https://imageproxy.wolt.com/menu/menu-images/5f291bd4741554e3b0c5a4fb/41654bc2-d647-11ea-97ca-c2156729ec34_24.jpeg"
+      },
+      {
+        "id": "45",
+        "name": "Chicken Kebab",
+        "category": "CHICKEN",
+        "price": 10.0,
+        "description": "Light kebab made with freshly ground chicken, fresh cilantro and Indian spices. Served with sliced naan bread, raita and chopped salad with cucumber, tomato and red onion",
+        "avatar": "https://imageproxy.wolt.com/menu/menu-images/5f291bd4741554e3b0c5a4fb/5966aac2-d647-11ea-9104-3e44a5120684_26.jpeg"
+      },
+      {
+        "id": "46",
+        "name": "Roti",
+        "category": "APPETIZER",
+        "price": 2.5,
+        "description": "Thin bread without yeast, baked in tandoori",
+        "avatar": "https://imageproxy.wolt.com/menu/menu-images/5f291bd4741554e3b0c5a4fb/889112f2-d646-11ea-aaaa-3e44a5120684_9.jpeg"
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "name": "Pueblo Chido Cocina Mexicana",
+    "category": "MEXICAN",
+    "address": "Leoforos Eleftheriou Venizelou 24",
+    "description": "Original mexican meals!",
+    "avatar": "https://imageproxy.wolt.com/mes-image/c8df6cd9-439f-4277-8314-db1db890a048/0687e8bc-14ec-4567-b51a-ea9cf2db89c6",
+    "rating": "4.5",
+    "products": [
+      {
+        "id": "47",
+        "name": "Alambpre De Pollo",
+        "category": "FAJITAS",
+        "price": 20.0,
+        "description": "300gr Chicken strips, smoked pancetta, colorful peppers with onions cooked in cast iron and melted cheese. Accompanied by 5 soft tortillas, Mexican sour cream rice, pico de gallo and chipotle mayo",
+        "avatar": "https://imageproxy.wolt.com/menu/menu-images/5fa2704d4ba50079c7af2b9a/3dc55218-c9d1-11eb-8523-cabba02dbd85_fajitas_alambre_de_polo__1_.jpeg"
+      },
+      {
+        "id": "48",
+        "name": "Hongos Locos (MushroomsFajitas)",
+        "category": "FAJITAS",
+        "price": 15.5,
+        "description": "Variety of mushrooms with colorful peppers and onions cooked in cast iron, cooled with casera and lime sauce. Accompanied by 5 soft tortillas, Mexican rice, sour cream, pico de gallo and avocado ranch",
+        "avatar": "https://imageproxy.wolt.com/menu/menu-images/5fa2704d4ba50079c7af2b9a/7d400704-984d-11eb-8900-b67d434b61ea_0d7c23f4_96cb_11eb_9542_5e5060eac8ab_postadas_camarones__1_.jpeg"
+      },
+      {
+        "id": "49",
+        "name": "Cerdo Al Mojo (Pork)",
+        "category": "PORK",
+        "price": 17.0,
+        "description": "350g Marinated pork grilled. Served on 3 soft tortillas with jalapenos, coriander leaves and lime and accompanied by salsa casera and Mexican rice",
+        "avatar": "https://imageproxy.wolt.com/menu/menu-images/5fa2704d4ba50079c7af2b9a/2e2ed940-1eab-11eb-a7a4-da315850f991_cerdo_al_mojo__2_.jpeg"
+      },
+      {
+        "id": "50",
+        "name": "Soft Tacos Pulled Beef",
+        "category": "TACOS",
+        "price": 11.8,
+        "description": "3 pieces of tacos with iceberg, sour cream, lime, coriander, guacamole and salsa casera",
+        "avatar": "https://imageproxy.wolt.com/menu/menu-images/5fa2704d4ba50079c7af2b9a/fe32107a-c9d3-11eb-9913-064886d8bf17_tacos_suaves__4_.jpeg"
+      },
+      {
+        "id": "51",
+        "name": "Soft Tacos Pulled Chicken",
+        "category": "TACOS",
+        "price": 10.5,
+        "description": "3 pieces of tacos with iceberg, sour cream, lime, coriander, guacamole and salsa casera",
+        "avatar": "https://imageproxy.wolt.com/menu/menu-images/5fa2704d4ba50079c7af2b9a/09451a34-c9d4-11eb-94c8-82caa278bd72_tacos_suaves__2_.jpeg"
+      },
+      {
+        "id": "52",
+        "name": "Soft Tacos Shrimps",
+        "category": "TACOS",
+        "price": 13.8,
+        "description": "3 pieces of tacos with 6 sautéed shrimp N3, iceberg, lime, coriander, guacamole, chipotle mayo and salsa casera",
+        "avatar": "https://imageproxy.wolt.com/menu/menu-images/5fa2704d4ba50079c7af2b9a/826b9f3a-d8cc-11eb-a1e0-b24b40fca3d0_suaves_camarones_enchilados_garides__1_.jpeg"
+      },
+      {
+        "id": "53",
+        "name": "Crispy Cheese Tacos Shrimps",
+        "category": "TACOS",
+        "price": 15.3,
+        "description": "3 pieces of tacos with 6 sautéed shrimp N3, iceberg, lime, coriander, guacamole, chipotle mayo and salsa casera",
+        "avatar": "https://imageproxy.wolt.com/menu/menu-images/5fa2704d4ba50079c7af2b9a/74abf034-d8cc-11eb-a917-7654921ea4d7_los_taqueros_gringos___4_.jpeg"
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "name": "Roma Pizza",
+    "category": "PIZZA",
+    "address": "Menelaou 22",
+    "description": "The most ROMAntic pizza!",
+    "avatar": "https://imageproxy.wolt.com/mes-image/28752efc-9d64-436a-aa7b-dd892ab8bb46/7ac95609-1430-459b-b88b-c92da69f83f7",
+    "rating": "3.5",
+    "products": [
+      {
+        "id": "54",
+        "name": "Garlic Bread",
+        "category": "SIDES",
+        "price": 2.4,
+        "description": "4 Pieces. Baked in the oven",
+        "avatar": "https://imageproxy.wolt.com/menu/menu-images/634d4116b445e1dfe4ed0e09/5f9fbc98-513e-11ed-a866-d2272da22ac0_12.jpeg"
+      },
+      {
+        "id": "55",
+        "name": "Garlic Bread with Tomato and Feta Cheese",
+        "category": "SIDES",
+        "price": 3.0,
+        "description": "4 Pieces. With tomato, feta cheese and oregano. Baked in the oven",
+        "avatar": "https://imageproxy.wolt.com/menu/menu-images/634d4116b445e1dfe4ed0e09/59427854-513e-11ed-8411-e6b9d85138fd_11.jpeg"
+      },
+      {
+        "id": "56",
+        "name": "Chef`s Salad",
+        "category": "",
+        "price": 6.2,
+        "description": "Salad with lettuce, cabbage, carrot, tomato, cucumber, gouda cheese, snack ham, egg and Roma Pizza dressing",
+        "avatar": "https://imageproxy.wolt.com/menu/menu-images/634d4116b445e1dfe4ed0e09/1fa8b860-513e-11ed-ba9f-0e3e0c70984a_06.jpeg"
+      },
+      {
+        "id": "57",
+        "name": "Plain",
+        "category": "PIZZA",
+        "price": 8.4,
+        "description": "With tomato sauce and gouda cheese",
+        "avatar": "https://imageproxy.wolt.com/menu/menu-images/634d4116b445e1dfe4ed0e09/257501ae-513e-11ed-9734-ce9aa699be93_07.jpeg"
+      },
+      {
+        "id": "58",
+        "name": "Vegetarian",
+        "category": "PIZZA",
+        "price": 8.8,
+        "description": "With fresh mushrooms, green pepper, gouda cheese and tomato sauce",
+        "avatar": "https://imageproxy.wolt.com/menu/menu-images/634d4116b445e1dfe4ed0e09/897d861c-513e-11ed-a442-8656e8d64fee_17.jpeg"
+      },
+      {
+        "id": "59",
+        "name": "Special",
+        "category": "PIZZA",
+        "price": 8.8,
+        "description": "With tomato sauce, gouda cheese, snack ham, bacon, fresh mushrooms and green pepper",
+        "avatar": "https://imageproxy.wolt.com/menu/menu-images/634d4116b445e1dfe4ed0e09/2ad87cfc-513e-11ed-a88c-daa1adb8f9e0_08.jpeg"
+      },
+      {
+        "id": "60",
+        "name": "Texas",
+        "category": "PIZZA",
+        "price": 9.6,
+        "description": "With chicken fillet, bacon, gouda cheese and BBQ sauce",
+        "avatar": "https://imageproxy.wolt.com/menu/menu-images/634d4116b445e1dfe4ed0e09/3fe3811e-513e-11ed-9c60-967a7a55851d_09.jpeg"
+      }
+    ]
+  },
+  {
+    "id": 9,
+    "name": "The Breakfast Club",
+    "category": "BREAKFAST",
+    "address": "Pl. Filikis Eterias 19",
+    "description": "Quality coffee and deliciou brunch!",
+    "avatar": "https://imageproxy.wolt.com/venue/61dd57f3784679aea8b35cdf/16061024-784e-11ec-a962-c6e610a6f33f__48a6689.jpg",
+    "rating": "4.2",
+    "products": [
+      {
+        "id": "61",
+        "name": "Eggs Benedict",
+        "category": "EGGS",
+        "price": 8.1,
+        "description": "Poached eggs with bacon, english muffin and hollandaise sauce",
+        "avatar": "https://imageproxy.wolt.com/menu/menu-images/61dd58246fa21cb57e3a33ca/6d3fb3e4-784f-11ec-bfd3-f2b35df2ee5a_breakfast4.jpeg"
+      },
+      {
+        "id": "62",
+        "name": "Omelette",
+        "category": "EGGS",
+        "price": 7.6,
+        "description": "From bio eggs with tomato, white onion, sauteed mushrooms, green peppers, olive slices, gruyere and oregano",
+        "avatar": "https://imageproxy.wolt.com/menu/menu-images/61dd58246fa21cb57e3a33ca/403a9490-784f-11ec-b4b9-3e34c0b3bef3_breakfast7.jpeg"
+      },
+      {
+        "id": "63",
+        "name": "Scrambled Eggs",
+        "category": "EGGS",
+        "price": 8.1,
+        "description": "Bio eggs with cream and chives",
+        "avatar": "https://imageproxy.wolt.com/menu/menu-images/61dd58246fa21cb57e3a33ca/1ca37786-784f-11ec-8a60-4a48671aa33a_breakfast10.jpeg"
+      },
+      {
+        "id": "64",
+        "name": "Beef Tacos",
+        "category": "EGGS",
+        "price": 7.6,
+        "description": "Tacos with slow cooked beef, avocado leaves and spicy peppers and tomato sauce",
+        "avatar": "https://imageproxy.wolt.com/menu/menu-images/61dd58246fa21cb57e3a33ca/0054940c-784f-11ec-912c-3e34c0b3bef3_breakfast12.jpeg"
+      },
+      {
+        "id": "65",
+        "name": "Chicken Wrap",
+        "category": "WRAP",
+        "price": 6.6,
+        "description": "With chicken fillet, cheddar, tomato, lettuce and avocado",
+        "avatar": "https://imageproxy.wolt.com/menu/menu-images/61dd58246fa21cb57e3a33ca/9744c6bc-784e-11ec-951f-565d20a8edc3_breakfast19.jpeg"
+      },
+      {
+        "id": "66",
+        "name": "Salmon Brioche",
+        "category": "SANDWICH",
+        "price": 3.0,
+        "description": "With smoked salmon, lettuce, cucucmber and cream cheese",
+        "avatar": "https://imageproxy.wolt.com/menu/menu-images/61dd58246fa21cb57e3a33ca/8d699334-784e-11ec-a439-d6c58c259e5f_breakfast20.jpeg"
+      },
+      {
+        "id": "67",
+        "name": "Salmon Club Sandwich",
+        "category": "SANDWICH",
+        "price": 9.6,
+        "description": "Wholegrain brioche with salmon, iceberg, cucumber, ginger and spicy mayo.Accompanied by mixed salad",
+        "avatar": "https://imageproxy.wolt.com/menu/menu-images/61dd58246fa21cb57e3a33ca/77e3b094-784e-11ec-9dbf-b20940877b41_breakfast22.jpeg"
+      }
+    ]
+  },
+  {
+    "id": 10,
+    "name": "Cafe-Cafe",
+    "category": "BREAKFAST",
+    "address": "Emiliou Veaki 60",
+    "description": "Delicious breakfast and brunch!",
+    "avatar": "https://imageproxy.wolt.com/venue/61dd57f3784679aea8b35cdf/16061024-784e-11ec-a962-c6e610a6f33f__48a6689.jpg",
+    "rating": "4.1",
+    "products": [
+      {
+        "id": "68",
+        "name": "Scrambled Kayana",
+        "category": "EGGS",
+        "price": 7.2,
+        "description": "With scrambled eggs, tomato, red onion, cherry tomatoes and grated feta cheese. Served on sourdough bread with salad",
+        "avatar": "https://imageproxy.wolt.com/menu/menu-images/shared/52a1f1a2-9e70-11ee-9e0d-526371f1ee1f_1__1_.jpg"
+      },
+      {
+        "id": "69",
+        "name": "Healthy Omelette",
+        "category": "EGGS",
+        "price": 7.0,
+        "description": "With sautéed mushrooms, baby spinach, avocado. Served on sourdough bread",
+        "avatar": "https://imageproxy.wolt.com/menu/menu-images/shared/6a648ec6-9e70-11ee-ab60-0a8ebe9939fc_1__4_.jpg"
+      },
+      {
+        "id": "70",
+        "name": "Fresh Orange Juice",
+        "category": "JUICE",
+        "price": 3.0,
+        "description": "",
+        "avatar": "https://imageproxy.wolt.com/menu/menu-images/62234aa88e5f029b6bca48a8/a64675e2-9f91-11ec-9ef4-ae008b66e329__0009__________________1_.jpeg"
+      },
+      {
+        "id": "71",
+        "name": "Espresso",
+        "category": "COFFEE",
+        "price": 1.6,
+        "description": "",
+        "avatar": "https://imageproxy.wolt.com/menu/menu-images/5f1985ee04f18d4c71c860e4/045e40a2-f6ee-11ec-96ab-9640821df3c7_espresso_single.jpeg"
+      },
+      {
+        "id": "72",
+        "name": "Cappuccino",
+        "category": "COFFEE",
+        "price": 2.0,
+        "description": "",
+        "avatar": "https://imageproxy.wolt.com/menu/menu-images/5f1985ee04f18d4c71c860e4/ef3c8eae-4c83-11ed-82fc-0252b3b5befb_cappuccino_double.jpeg"
+      },
+      {
+        "id": "73",
+        "name": "Ice Tea",
+        "category": "TEA",
+        "price": 2.0,
+        "description": "",
+        "avatar": "https://imageproxy.wolt.com/menu/menu-images/5f1985ee04f18d4c71c860e4/6f3bfadc-291f-11ed-8870-76f4029ecd23________________ice.jpeg"
+      },
+      {
+        "id": "74",
+        "name": "Rokkoko",
+        "category": "",
+        "price": 2.0,
+        "description": "Mixture of green and black tea. With caramel and coconut",
+        "avatar": "https://imageproxy.wolt.com/menu/menu-images/5f1985ee04f18d4c71c860e4/74226658-291f-11ed-893b-2a6b8d4cef68____________________.jpeg"
+      },
+      {
+        "id": "75",
+        "name": "Green Tea",
+        "category": "TEA",
+        "price": 2.0,
+        "description": "",
+        "avatar": "https://imageproxy.wolt.com/menu/menu-images/62234aa88e5f029b6bca48a8/1c88a5a2-9f8f-11ec-a3e8-bac3bf2d7be3__0009_____________________1_.jpeg"
+      }
+    ]
+  },
+  {
+    "id": 12,
+    "name": "Pizza Fan",
+    "category": "PIZZA",
+    "address": "Ippokrateiou 35",
+    "description": "For pizza lovers",
+    "avatar": "https://imageproxy.wolt.com/mes-image/f7c8ee52-b8d1-45c0-b28e-d02f72fa0a38/f04fbcf6-e3c9-44eb-914b-baa6df8e680b?w=200",
+    "rating": "4"
+  },
+  {
+    "id": 18,
+    "name": "FoodTek",
+    "category": "OTHER",
+    "address": "Ioanninon 14",
+    "description": "Asian Bites!",
+    "avatar": "https://imageproxy.wolt.com/venue/613a04789f1e5058b81ab307/064ccbfe-1b70-11ec-b085-0efd9af55f85__48a5981.jpg",
+    "rating": "4.5"
+  },
+  {
+    "id": 34,
+    "name": "Mikel",
+    "category": "COFFEE",
+    "address": "Ampelokipoi 72",
+    "description": "Be a member of the best coffee community!",
+    "avatar": "https://imageproxy.wolt.com/mes-image/ff3473a9-98c3-48b5-aa2d-4a454caf183a/f34e57dd-8539-4105-aac6-4a0d4a3903a0?w=960",
+    "rating": "4.5"
+  },
+  {
+    "id": 80,
+    "name": "The Big Bad Wolf",
+    "category": "SOUVLAKI",
+    "address": "Agioi Anargiroi 98",
+    "description": "Souvlaki from anoooother planet!",
+    "avatar": "https://imageproxy.wolt.com/venue/608a7ea85884fe4e84de6341/32cfc79c-b218-11eb-b0db-3a534ff2bd4a__56a9136_75.jpg",
+    "rating": "4.5"
+  },
+  {
+    "id": 105,
+    "name": "Goodys Burger House",
+    "category": "FAST_FOOD",
+    "address": "Ampelokipous 23rd Av.",
+    "description": "Goody's classics",
+    "avatar": "https://imageproxy.wolt.com/mes-image/6338b43f-4ca3-488d-8f2e-65f1a0a166fa/c497df19-c555-447c-be44-e4ec1fcc48f8?w=1920",
+    "rating": "4"
+  }
 ]
