@@ -22,13 +22,4 @@ export class AccountPageComponent {
 
     })
   }
-  
-//   ngOnInit() {
-//     this.service.getUserProfile().subscribe({
-//       next: (data: any[]) => {
-//         console.log(data);
-//         this.user = data[0];
-//       }
-//     })
-// }
 }
