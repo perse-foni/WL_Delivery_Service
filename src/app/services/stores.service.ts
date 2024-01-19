@@ -7,11 +7,12 @@ import { Store } from '../models/store';
 @Injectable({
   providedIn: 'root',
 })
-export class StoreService {
+export class StoresService {
   http = inject(HttpClient);
   endpointUrl = 'assets/json-data/stores.json';
 
-  getStore() {
+  getStores() {
+    
     return this.http.get<Store[]>(this.endpointUrl).pipe(
       retry(1),
       catchError((error) =>

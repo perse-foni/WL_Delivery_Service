@@ -1,7 +1,7 @@
 import { Component, inject } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { StoreComponent } from '../store/store.component';
-import { StoreService } from '../../services/store.service';
+import { StoresService } from '../../services/stores.service';
 import { Store } from '../../models/store';
 
 @Component({
@@ -12,12 +12,13 @@ import { Store } from '../../models/store';
   styleUrl: './stores-list.component.css',
 })
 export class StoresListComponent {
+  
   storesList: any;
-  service = inject(StoreService);
+  service = inject(StoresService);
   storeList: Store[] = [];
 
   ngOnInit() {
-    this.service.getStore().subscribe({
+    this.service.getStores().subscribe({
       next: (data) => {
         console.log(data);
         this.storeList = data;

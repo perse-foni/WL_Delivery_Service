@@ -1,0 +1,46 @@
+<div class="container">
+    <div>
+        <div class="pb-2">
+            <img src={{store.avatar}} class="rounded-bottom" class="card-img" alt="...">
+        </div>
+
+        <div>
+            <h1>{{store.name}}</h1>
+
+            <div class="d-flex justify-content-between">
+                <div class="d-flex">
+                    <p>{{store.description}}</p>
+                    <div class="d-flex">
+                        <p class="list-group-item fs-6 pe-1"> {{store.rating}}</p>
+                        <img src="../../../assets/icons/reviews.svg" class="svgIcon pb-3" />
+                    </div>
+                </div>
+
+                <div class="container-fluid">
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search in {{store.name}}"
+                            aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div class="pt-5">
+            <h3>Menu</h3>
+            
+            <div>
+                <div>
+                    @for (product of store.products; track product.id) {
+                    <div>
+                        <app-product [product]="product" />
+                    </div>
+                    } @empty {
+                    <h2>No data available</h2>
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+
+

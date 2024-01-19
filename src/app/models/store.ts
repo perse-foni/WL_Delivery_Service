@@ -1,3 +1,5 @@
+import { Product } from "./product";
+
 export interface Store {
   id: number;
   name: string;
@@ -6,4 +8,5 @@ export interface Store {
   description: string;
   avatar: string;
   rating: number;
-}
+  products: Product[];
+ }
