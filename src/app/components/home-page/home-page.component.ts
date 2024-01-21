@@ -3,13 +3,15 @@ import { CommonModule } from '@angular/common';
 import { RouterOutlet } from '@angular/router';
 import { CategoriesListComponent } from '../categories-list/categories-list.component';
 import { StoresListComponent } from '../stores-list/stores-list.component';
+import { AccountPageComponent } from '../account-page/account-page.component';
+import { MostFamousStoresListComponent } from "../most-famous-stores-list/most-famous-stores-list.component";
 
 @Component({
-  selector: 'app-home-page',
-  standalone: true,
-  imports: [CommonModule, RouterOutlet, CategoriesListComponent, StoresListComponent],
-  templateUrl: './home-page.component.html',
-  styleUrl: './home-page.component.css'
+    selector: 'app-home-page',
+    standalone: true,
+    templateUrl: './home-page.component.html',
+    styleUrl: './home-page.component.css',
+    imports: [CommonModule, RouterOutlet, CategoriesListComponent, StoresListComponent, AccountPageComponent, MostFamousStoresListComponent]
 })
 export class HomePageComponent {
 

@@ -3,11 +3,11 @@
     <div class="container-fluid">
       <a class="navbar-brand" routerLink="home" routerLinkActive="active">
         <img
-          src="https://getbootstrap.com/docs/4.0/assets/brand/bootstrap-solid.svg"
-          width="30"
-          height="30"
-          class="d-inline-block align-top"
-          alt=""
+          src="assets\images\wl-delivery-service-high-resolution-logo-transparent.png"
+          width="50"
+          height="50"
+          class="d-inline-block align-center"
+          alt="  WL Delivery Service Logo"
         />
         WL Delivery Service
       </a>
@@ -30,17 +30,7 @@
         <ul class="navbar-nav">
           <li class="nav-item">
             <a class="nav-link" routerLink="home" routerLinkActive="active"
-              >Nav Item 1</a
-            >
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" routerLink="**" routerLinkActive="active"
-              >Nav Item 2</a
-            >
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" routerLink="login" routerLinkActive="active"
-              >Nav Item 3</a
+              >Home</a
             >
           </li>
           <li class="nav-item">
@@ -58,6 +48,52 @@
           />
           <button class="btn btn-outline-primary" type="submit">Search</button>
         </form>
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link d-flex" routerLink="**" routerLinkActive="active"
+              >Cart
+            </a>
+          </li>
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="navbarDropdown"
+              role="button"
+              data-bs-toggle="dropdown"
+              data-bs-placement="center"
+              aria-expanded="false"
+            >
+              Janet
+              <img
+                src="https://www.svgrepo.com/show/442075/avatar-default-symbolic.svg"
+                width="25"
+                height="25"
+                alt=""
+                class="ms-1 mb-1"
+              />
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li>
+                <a
+                  class="dropdown-item"
+                  routerLink="account"
+                  routerLinkActive="active"
+                  >Account page</a
+                >
+              </li>
+              <li><hr class="dropdown-divider" /></li>
+              <li>
+                <a
+                  class="dropdown-item"
+                  routerLink="login"
+                  routerLinkActive="active"
+                  >Log out</a
+                >
+              </li>
+            </ul>
+          </li>
+        </ul>
       </div>
     </div>
   </nav>

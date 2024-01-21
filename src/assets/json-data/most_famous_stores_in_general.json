@@ -3,66 +3,100 @@
         "id": 1,
         "name": "McDonald's",
         "category": "FAST_FOOD",
-        "address": "Syntagma 15" 
+        "address": "Syntagma 15",
+        "description": "I'm lovin' it!",
+        "avatar": "https://imageproxy.wolt.com/mes-image/9dda58a4-a474-4e8e-a9ba-9da30a3a0d03/b7e18341-6f6e-413c-a3ee-93e31247b2a3",
+        "rating":"4" 
     },
     {
         "id": 12,
         "name": "Pizza Fan",
         "category": "PIZZA",
-        "address": "Ippokrateiou 35" 
+        "address": "Ippokrateiou 35",
+        "description": "For pizza lovers",
+        "avatar": "https://imageproxy.wolt.com/mes-image/f7c8ee52-b8d1-45c0-b28e-d02f72fa0a38/f04fbcf6-e3c9-44eb-914b-baa6df8e680b?w=200",
+        "rating":"4" 
     },
     {
         "id": 8,
         "name": "Roma Pizza",
         "category": "PIZZA",
-        "address": "Menelaou 22" 
+        "address": "Menelaou 22",
+        "description": "The most ROMAntic pizza!",
+        "avatar": "https://imageproxy.wolt.com/mes-image/28752efc-9d64-436a-aa7b-dd892ab8bb46/7ac95609-1430-459b-b88b-c92da69f83f7",
+        "rating":"3.5"
+
     },
     {
         "id": 105,
         "name": "Goodys Burger House",
         "category": "FAST_FOOD",
-        "address": "Ampelokipous 23rd Av."
+        "address": "Ampelokipous 23rd Av.",
+        "description": "Goody's classics",
+        "avatar": "https://imageproxy.wolt.com/mes-image/6338b43f-4ca3-488d-8f2e-65f1a0a166fa/c497df19-c555-447c-be44-e4ec1fcc48f8?w=1920",
+        "rating":"4" 
     },
     {
         "id": 80,
         "name": "The Big Bad Wolf",
         "category": "SOUVLAKI",
-        "address": "Agioi Anargiroi 98" 
+        "address": "Agioi Anargiroi 98",
+        "description": "Asian Bites!",
+        "avatar": "https://imageproxy.wolt.com/venue/613a04789f1e5058b81ab307/064ccbfe-1b70-11ec-b085-0efd9af55f85__48a5981.jpg",
+        "rating":"4.5" 
     },
     {
         "id": 34,
         "name": "Mikel",
         "category": "COFFEE",
-        "address": "Ampelokipoi 72" 
+        "address": "Ampelokipoi 72",
+        "description": "Be a member of the best coffee community!",
+        "avatar": "https://imageproxy.wolt.com/mes-image/ff3473a9-98c3-48b5-aa2d-4a454caf183a/f34e57dd-8539-4105-aac6-4a0d4a3903a0?w=960",
+        "rating":"4.5"
     },
     {
         "id": 2,
         "name": "StreetWok",
         "category": "ASIAN",
-        "address": "Glyfada Str. 203"
+        "address": "Glyfada Str. 203",
+        "description": "Asian Bites!",
+        "avatar": "https://imageproxy.wolt.com/venue/613a04789f1e5058b81ab307/064ccbfe-1b70-11ec-b085-0efd9af55f85__48a5981.jpg",
+        "rating":"4.5"
     },
     {
         "id": 4,
         "name": "Coffee Lab",
         "category": "COFFEE",
-        "address": "Athinaion 15" 
+        "address": "Athinaion 15",
+        "description": "Asian Bites!",
+        "avatar": "https://imageproxy.wolt.com/venue/613a04789f1e5058b81ab307/064ccbfe-1b70-11ec-b085-0efd9af55f85__48a5981.jpg",
+        "rating":"4.5" 
     },
     {
         "id": 5,
         "name": "Gregory",
         "category": "COFFEE",
-        "address": "Agisilaou 222" 
+        "address": "Agisilaou 222",
+        "description": "Asian Bites!",
+        "avatar": "https://imageproxy.wolt.com/venue/613a04789f1e5058b81ab307/064ccbfe-1b70-11ec-b085-0efd9af55f85__48a5981.jpg",
+        "rating":"4.5" 
     },
     {
         "id": 3,
         "name": "Nanou Donuts House",
         "category": "DONUTS",
-        "address": "Ampelokipous 23rd Av."
+        "address": "Ampelokipous 23rd Av.",
+        "description": "Fresh authentic Greek donuts!",
+        "avatar": "https://imageproxy.wolt.com/mes-image/5be9927a-59fe-4b7a-b1e7-6db52e7e2b00/c86f3085-5bdb-42e3-a340-1e7da8d72b73",
+        "rating":"4.3"
     },
     {
         "id": 18,
         "name": "FoodTek",
         "category": "OTHER",
-        "address": "Ioanninon 14" 
+        "address": "Ioanninon 14",
+        "description": "Asian Bites!",
+        "avatar": "https://imageproxy.wolt.com/venue/613a04789f1e5058b81ab307/064ccbfe-1b70-11ec-b085-0efd9af55f85__48a5981.jpg",
+        "rating":"4.5"
     }
 ]
