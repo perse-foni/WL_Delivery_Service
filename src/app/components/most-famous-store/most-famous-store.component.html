@@ -1,13 +1,20 @@
-<a class="nav-link" routerLink="/famousStore/{{ famousStore.id }}">
+<a class="nav-link" routerLink="/store/{{ famousStore.id }}">
   <div>
-    <div class="card cardAnimation mb-5 bg-body-tertiary rounded" style="width: 25rem">
-      <img src={{famousStore.avatar}} class="card-img-top" alt="...">
+    <div
+      class="card cardAnimation mb-5 bg-body-tertiary rounded"
+      style="width: 25rem"
+    >
+      <img src="{{ famousStore.avatar }}" class="card-img-top" alt="..." />
       <div class="card-body">
         <h3 class="card-title">{{ famousStore.name }}</h3>
         <div class="text-wrap">
-          <p class="card-text text-secondary fs-6">{{ famousStore.description }}</p>
+          <p class="card-text text-secondary fs-6">
+            {{ famousStore.description }}
+          </p>
           <div class="rating-wrap">
-            <p class="list-group-item text-secondary fs-6"> {{ famousStore.rating }}</p>
+            <p class="list-group-item text-secondary fs-6">
+              {{ famousStore.rating }}
+            </p>
             <img src="../../../assets/icons/reviews.svg" class="svgIcon" />
           </div>
         </div>
