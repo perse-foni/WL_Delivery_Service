@@ -1,7 +1,7 @@
 import { Component, Input } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterLink } from '@angular/router';
-import { MostFamous } from '../../most-famous';
+import { MostFamous } from '../../models/most-famous';
 
 @Component({
   selector: 'app-most-famous-store',

@@ -1,5 +1,7 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { ProfileService } from '../../services/profile.service';
+
 
 @Component({
   selector: 'app-account-page',
@@ -9,5 +11,15 @@ import { CommonModule } from '@angular/common';
   styleUrl: './account-page.component.css'
 })
 export class AccountPageComponent {
+  
+  user: any;
+  service = inject(ProfileService)
 
+  ngOnInit() {
+
+    this.service.getUserProfile().subscribe({
+      next: response => this.user = response
+
+    })
+  }
 }

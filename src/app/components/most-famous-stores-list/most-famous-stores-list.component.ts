@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common';
 import { RouterLink } from '@angular/router';
 import { MostFamousStoreComponent } from '../most-famous-store/most-famous-store.component';
 import { FamousStoresService } from '../../services/famous-stores.service';
-import { MostFamous } from '../../most-famous';
+import { MostFamous } from '../../models/most-famous';
 
 @Component({
   selector: 'app-most-famous-stores-list',

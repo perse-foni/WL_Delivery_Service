@@ -12,7 +12,7 @@ export const routes: Routes = [
     { path:'login', component:LandingPageComponent},
     { path:'home', component:HomePageComponent},
     { path:'registration', component:RegistrationPageComponent},
-    { path: 'profile', component:AccountPageComponent},
+    { path: 'account', component:AccountPageComponent},
     { path: 'history', component:HistoryPageComponent},
     { path: 'store/:id', component:SingleStoreComponent},
     { path: '', redirectTo: 'login', pathMatch: 'full'},  
