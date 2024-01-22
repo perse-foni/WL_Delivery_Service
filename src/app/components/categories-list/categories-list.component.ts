@@ -3,24 +3,32 @@ import { CommonModule } from '@angular/common';
 import { CategoryService } from '../../services/category.service';
 import { CategoryComponent } from '../category/category.component';
 
-
 @Component({
   selector: 'app-categories-list',
   standalone: true,
   imports: [CommonModule, CategoryComponent],
   templateUrl: './categories-list.component.html',
-  styleUrl: './categories-list.component.css'
+  styleUrl: './categories-list.component.css',
 })
 export class CategoriesListComponent {
- 
   categoriesList: any;
-  service = inject(CategoryService)
+  currentIndex: number = 0;
+
+  constructor(private service: CategoryService) {}
 
   ngOnInit() {
     this.service.getCategory().subscribe({
-      next: data => {
+      next: (data) => {
         console.log(data);
         this.categoriesList = data;
-      }
-    })
-  }}
+      },
+    });
+  }
+
+  moveCarousel(direction: number) {
+    const newIndex = this.currentIndex + direction;
+    if (newIndex >= 0 && newIndex < this.categoriesList.length) {
+      this.currentIndex = newIndex;
+    }
+  }
+}
