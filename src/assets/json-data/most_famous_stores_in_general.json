@@ -41,8 +41,8 @@
         "name": "The Big Bad Wolf",
         "category": "SOUVLAKI",
         "address": "Agioi Anargiroi 98",
-        "description": "Asian Bites!",
-        "avatar": "https://imageproxy.wolt.com/venue/613a04789f1e5058b81ab307/064ccbfe-1b70-11ec-b085-0efd9af55f85__48a5981.jpg",
+        "description": "Souvlaki from anoooother planet!",
+        "avatar": "https://imageproxy.wolt.com/venue/608a7ea85884fe4e84de6341/32cfc79c-b218-11eb-b0db-3a534ff2bd4a__56a9136_75.jpg",
         "rating":"4.5" 
     },
     {
@@ -68,8 +68,8 @@
         "name": "Coffee Lab",
         "category": "COFFEE",
         "address": "Athinaion 15",
-        "description": "Asian Bites!",
-        "avatar": "https://imageproxy.wolt.com/venue/613a04789f1e5058b81ab307/064ccbfe-1b70-11ec-b085-0efd9af55f85__48a5981.jpg",
+        "description": "Croissants at their best...",
+        "avatar": "https://imageproxy.wolt.com/mes-image/35d65592-ec79-423b-8921-ecb09cae52ba/a9bd9221-1631-4a00-92e4-5bde7b171e95",
         "rating":"4.5" 
     },
     {
@@ -77,8 +77,8 @@
         "name": "Gregory",
         "category": "COFFEE",
         "address": "Agisilaou 222",
-        "description": "Asian Bites!",
-        "avatar": "https://imageproxy.wolt.com/venue/613a04789f1e5058b81ab307/064ccbfe-1b70-11ec-b085-0efd9af55f85__48a5981.jpg",
+        "description": "The ones who make your day, you know by name!",
+        "avatar": "https://imageproxy.wolt.com/mes-image/5be9a33c-b685-4a01-963b-2d8368f4e898/b2a3b216-d22c-4744-a16f-594d7ac64c2a",
         "rating":"4.5" 
     },
     {
@@ -95,8 +95,9 @@
         "name": "FoodTek",
         "category": "OTHER",
         "address": "Ioanninon 14",
-        "description": "Asian Bites!",
-        "avatar": "https://imageproxy.wolt.com/venue/613a04789f1e5058b81ab307/064ccbfe-1b70-11ec-b085-0efd9af55f85__48a5981.jpg",
+        "description": "Food Techniques!",
+        "avatar": "https://imageproxy.wolt.com/venue/632b20ee79b3e6f818f60120/354d0f24-cbdf-11ed-a330-d2c8496cfcf2_smokers_menu_3.jpg",
         "rating":"4.5"
     }
+  
 ]
