@@ -34,14 +34,14 @@
       <div class="d-flex justify-content-between align-items-center">
         <div class="d-flex">
           <button
-            class="btn btn-primary mr-2"
+            class="btn btn-primary m-1"
             (click)="moveCarousel(-1)"
             [disabled]="currentIndex === 0"
           >
             &lt;
           </button>
           <button
-            class="btn btn-primary ml-2"
+            class="btn btn-primary m-1"
             (click)="moveCarousel(1)"
             [disabled]="currentIndex + 6 >= categoriesList.length"
           >
