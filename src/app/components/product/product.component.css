@@ -1,0 +1,51 @@
+.cardAnimation {
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.08), 0 0 6px rgba(0, 0, 0, 0.05);
+  transition: 0.3s transform cubic-bezier(0.155, 1.105, 0.295, 1.12),
+    0.3s box-shadow,
+    0.3s -webkit-transform cubic-bezier(0.155, 1.105, 0.295, 1.12);
+}
+
+.cardAnimation:hover {
+  transform: scale(1.02);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12), 0 4px 8px rgba(0, 0, 0, 0.06);
+}
+
+.cardWrap {
+  width: 550px;
+}
+
+.productImg {
+  object-fit: cover;
+  width: 100%;
+}
+
+.textWrap {
+  height: 70px;
+}
+
+.fontSize {
+  font-size: 13px;
+}
+
+.truncateLineClamp {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  width: 316px;
+  overflow: hidden;
+}
+
+.counterWrap {
+  padding-left: 160px;
+}
+
+input {
+  width: 40px;
+  border: none;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
