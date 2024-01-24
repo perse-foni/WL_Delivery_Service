@@ -3,13 +3,57 @@
 </div>
 
 <div class="grid">
-  <div class="row">
+  <div *ngIf="storeList.length; else skeleton" class="row">
     @for (store of storeList; track store.id) {
-      <div class="col d-inline-flex justify-content-center p-1">
-        <app-store [store]="store" />
-      </div>
+    <div class="col d-inline-flex justify-content-center p-1">
+      <app-store [store]="store" />
+    </div>
     } @empty {
       <h2>No data available...</h2>
     }
   </div>
 </div>
+
+<ng-template #skeleton>
+  <div class="grid">
+    <div class="row">
+      @for (i of skeletons; track i) {
+      <div class="col d-inline-flex justify-content-center p-1">
+        <div class="card mb-5 bg-body-tertiary rounded" style="width: 25rem">
+          <ngx-skeleton-loader
+            class="d-block"
+            count="1"
+            [theme]="{
+              width: '399px',
+              height: '224px',
+            }"
+          >
+          </ngx-skeleton-loader>
+
+          <ngx-skeleton-loader
+            class="d-block ps-3"
+            count="1"
+            animation="pulse"
+            appearance="line"
+            [theme]="{
+              width: '150px'
+            }"
+          >
+          </ngx-skeleton-loader>
+
+          <ngx-skeleton-loader
+            class="ps-3"
+            count="1"
+            animation="pulse"
+            appearance="line"
+            [theme]="{
+              width: '100px'
+            }"
+          >
+          </ngx-skeleton-loader>
+        </div>
+      </div>
+      }
+    </div>
+  </div>
+</ng-template>

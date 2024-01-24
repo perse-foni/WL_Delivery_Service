@@ -18,6 +18,7 @@ export class StoreComponent {
     address: '',
     description: '',
     avatar: '',
-    rating: 0
+    rating: 0,
+    products: []
   };
 }

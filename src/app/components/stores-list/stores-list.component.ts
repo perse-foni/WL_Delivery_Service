@@ -1,26 +1,31 @@
 import { Component, inject } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { StoreComponent } from '../store/store.component';
-import { StoreService } from '../../services/store.service';
+import { StoresService } from '../../services/stores.service';
 import { Store } from '../../models/store';
+import { NgxSkeletonLoaderModule } from 'ngx-skeleton-loader';
 
 @Component({
   selector: 'app-stores-list',
   standalone: true,
-  imports: [CommonModule, StoreComponent],
+  imports: [CommonModule, StoreComponent, NgxSkeletonLoaderModule],
   templateUrl: './stores-list.component.html',
   styleUrl: './stores-list.component.css',
 })
 export class StoresListComponent {
-  storesList: any;
-  service = inject(StoreService);
+  
+  service = inject(StoresService);
   storeList: Store[] = [];
+  skeletons: number[] = Array(9)
+
 
   ngOnInit() {
-    this.service.getStore().subscribe({
+    this.service.getStores().subscribe({
       next: (data) => {
-        console.log(data);
-        this.storeList = data;
+        setTimeout(() => {
+          console.log(data);
+          this.storeList = data;
+        }, 1000);
       },
     });
   }
