@@ -17,7 +17,7 @@ import { FooterComponent } from './components/footer/footer.component';
     NavigationBarComponent,
     FooterComponent,
     RegistrationPageComponent,
-    LandingPageComponent,
+    LandingPageComponent
   ],
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css'],

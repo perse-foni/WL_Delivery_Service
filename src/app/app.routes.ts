@@ -5,7 +5,8 @@ import { PageNotFoundComponent } from './components/page-not-found/page-not-foun
 import { AccountPageComponent } from './components/account-page/account-page.component';
 import { RegistrationPageComponent } from './components/registration-page/registration-page.component';
 import { HistoryPageComponent } from './components/history-page/history-page.component';
-import { SingleStoreComponent } from './single-store/single-store.component';
+import { SingleStoreComponent } from './components/single-store/single-store.component';
+
 
 export const routes: Routes = [
 

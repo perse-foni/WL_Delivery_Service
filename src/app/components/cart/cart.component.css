@@ -1,0 +1,54 @@
+.offcanvas {
+  --bs-offcanvas-width: 375px;
+  --bs-offcanvas-width: 605px;
+}
+
+.bodyWrap {
+  position: relative;
+}
+
+.card {
+  border: none;
+}
+
+.productImg {
+  object-fit: cover;
+  width: 100%;
+}
+
+.textWrap {
+  height: 75px;
+}
+
+.fontSize {
+  font-size: 13px;
+}
+
+.marginBlock {
+  margin-block: 0;
+}
+
+.truncateLineClamp {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.svgIcon {
+  filter: invert(64%) sepia(75%) saturate(1658%) hue-rotate(144deg)
+    brightness(98%) contrast(92%);
+}
+
+.checkoutWrap {
+  position: absolute;
+  bottom: 10px;
+  width: 95%;
+}
+
+.checkoutBtn {
+  background-color: #ffcf07;
+  height: 60px;
+  border: none;
+  color: black;
+}
