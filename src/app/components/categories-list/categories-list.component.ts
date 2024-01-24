@@ -17,7 +17,7 @@ export class CategoriesListComponent {
 
   constructor(private service: CategoryService) {};
   categoriesList: any = [];
-  skeletons: number[] = Array(5);
+  skeletons: number[] = Array(6);
 
   ngOnInit() {
     this.service.getCategory().subscribe({
