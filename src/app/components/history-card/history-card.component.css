@@ -1,0 +1,17 @@
+.list-group-item{
+    border: none
+}
+
+.card > .list-group{
+    border-top: none;
+    border-bottom: none;
+}
+
+.truncateLineClamp {
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    width: 230px;
+    overflow: hidden;
+  }
+

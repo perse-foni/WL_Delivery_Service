@@ -1,0 +1,76 @@
+[
+    {
+        "id": 1,
+        "name": "McDonald's",
+        "description": "I'm lovin' it!",
+        "avatar": "https://imageproxy.wolt.com/mes-image/9dda58a4-a474-4e8e-a9ba-9da30a3a0d03/b7e18341-6f6e-413c-a3ee-93e31247b2a3",
+        "product1": "Crispy McBacon",
+        "price1": "3.99",
+        "product2": "Single Big Tasty Chicken Bacon",
+        "price2": "2.79",
+        "date": "2/01/2024"
+    },
+
+    {
+        "id": 2,
+        "name": "Coffee Lab",
+        "description": "Croissants at their best...",
+        "avatar": "https://imageproxy.wolt.com/mes-image/35d65592-ec79-423b-8921-ecb09cae52ba/a9bd9221-1631-4a00-92e4-5bde7b171e95",
+        "product1": "Espresso",
+        "price1": "1.60",
+        "product2": "Cappuccino",
+        "price2": "1.90",
+        "date": "3/01/2024"
+    },
+
+    {   
+        "id": 3,
+        "name": "Nanou Donuts House",
+        "description": "Fresh authentic Greek donuts!",
+        "avatar": "https://imageproxy.wolt.com/mes-image/5be9927a-59fe-4b7a-b1e7-6db52e7e2b00/c86f3085-5bdb-42e3-a340-1e7da8d72b73",
+        "product1": "Cinnamon Donut",
+        "price1": "2.20",
+        "product2": "Donut Delizioso",
+        "price2": "2.50",
+        "date": "10/01/2024"
+    },
+
+    {   
+        "id": 4,
+        "name": "StreetWok",
+        "description": "Asian Bites!",
+        "avatar": "https://imageproxy.wolt.com/venue/613a04789f1e5058b81ab307/064ccbfe-1b70-11ec-b085-0efd9af55f85__48a5981.jpg",
+        "product1": "Pork Noodles with teriyaki",
+        "price1": "7.20",
+        "product2": "Mushroom Brown Rice",
+        "price2": "7.50",
+        "date": "11/01/2024"
+    },
+
+    {   
+        "id": 5,
+        "name": "Gregory",
+        "description": "The ones who make your day, you know by name!",
+        "avatar": "https://imageproxy.wolt.com/mes-image/5be9a33c-b685-4a01-963b-2d8368f4e898/b2a3b216-d22c-4744-a16f-594d7ac64c2a",
+        "product1": "Iced Latte",
+        "price1": "3.50",
+        "product2": "Americano",
+        "price2": "2",
+        "date": "15/01/2024"
+    },
+
+    {
+        "id": 6,
+        "name": "McDonald's",
+        "description": "I'm lovin' it!",
+        "avatar": "https://imageproxy.wolt.com/mes-image/9dda58a4-a474-4e8e-a9ba-9da30a3a0d03/b7e18341-6f6e-413c-a3ee-93e31247b2a3",
+        "product1": "Big McBacon",
+        "price1": "3.99",
+        "product2": "Deluxe Burger",
+        "price2": "2.79",
+        "date": "2/01/2024"
+        }
+
+
+    
+]

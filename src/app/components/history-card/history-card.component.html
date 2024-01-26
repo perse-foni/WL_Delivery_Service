@@ -2,24 +2,27 @@
   <img
     class="card-img-top"
     [src]="history.avatar"
-    alt="Card image cap"
-  />
+    alt="Card image cap"/>
   <div class="card-body">
     <div class="d-flex text-muted font-weight-">
-      <p class="card-text me-1 mx-auto">25/05/2023 |</p>
-      <p class="card-text">22:23</p>
+      <p class="card-text me-1 mx-auto">{{ history.date }}</p>
     </div>
-    <h5 class="card-title">{{ history.first_name }}</h5>
+    <h5 class="card-title">{{ history.name }}</h5>
   </div>
-  <ul class="list-group list-group-flush">
-    <li class="list-group-item text-muted">{{ history.id }} x {{ history.email }}</li>
-    <li class="list-group-item text-muted">2 x Chocolate Donut</li>
-    <li class="list-group-item text-muted">1 x Orange Juice</li>
+  <ul class="list-group list-group-flush ps-3 pe-3">
+    <li class="text-muted d-flex justify-content-between">  
+    <p class="truncateLineClamp">1 x {{ history.product1 }}, 1 x {{ history.product2 }}</p>
+    </li>
+    <hr>
+    <li class="d-flex justify-content-end">
+      <span class="me-4">Total:</span> 
+      <span>{{ (+history.price1) + (+history.price2) }} €</span>
+    </li>
   </ul>
-  <div class="card-body d-flex mx-auto">
-    <a class="btn btn-light me-2" href="" role="button">Show more</a>
-    <button class="btn btn-primary ms-1" type="submit">
+  <div class="card-body d-flex justify-content-end">
+    <button class="btn btn-primary" type="submit">
       Order again
     </button>
   </div>
-</div>
+</div> 
+
