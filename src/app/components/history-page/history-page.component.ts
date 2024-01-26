@@ -1,9 +1,9 @@
 import { Component, OnInit, inject } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterOutlet } from '@angular/router';
-import { DataService } from '../../services/service-history.service';
 import { HistoryCardComponent } from '../history-card/history-card.component';
 import { HttpClientModule } from '@angular/common/http';
+import { HistoryService } from '../../services/history.service';
 
 @Component({
   selector: 'app-history-page',
@@ -13,13 +13,13 @@ import { HttpClientModule } from '@angular/common/http';
   styleUrl: './history-page.component.css',
 })
 export class HistoryPageComponent implements OnInit {
+
   historyList: any;
-
-  service = inject(DataService);
-
+  service = inject(HistoryService);
+  
   ngOnInit() {
-    this.service.getData().subscribe({
-      next: (response) => (this.historyList = response),
+    this.service.getHistoryOrder().subscribe({
+      next: response => {console.log(response);this.historyList = response}
     });
   }
 }
