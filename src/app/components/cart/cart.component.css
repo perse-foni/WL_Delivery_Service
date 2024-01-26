@@ -1,6 +1,5 @@
-.offcanvas {
-  --bs-offcanvas-width: 375px;
-  --bs-offcanvas-width: 605px;
+.emptyCartWrap {
+  height: 100%;
 }
 
 .bodyWrap {

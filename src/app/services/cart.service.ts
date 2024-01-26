@@ -1,20 +1,28 @@
-import { HttpClient } from '@angular/common/http';
 import { Injectable, inject } from '@angular/core';
 
 @Injectable({
   providedIn: 'root',
 })
 export class CartService {
-  http = inject(HttpClient);
-  endpointUrl = 'assets/json-data/stores.json';
+
 
   private items: any[] = JSON.parse(localStorage.getItem('cartItems') || '[]');
 
   addtoCart(product: any) {
-    this.items.push({ ...product, quantity: 1 });
+    const existingItem = this.items.find(item => item.id === product.id);
+    if (existingItem) {
+      existingItem.quantity++; 
+    } else {
+      this.items.push({ ...product, quantity: 1 }); 
+    }
     localStorage.setItem('cartItems', JSON.stringify(this.items));
   }
 
+  clearCart() {
+    this.items = [];
+    localStorage.removeItem('cartItems');
+  }
+  
   getItems() {
     return this.items;
   }

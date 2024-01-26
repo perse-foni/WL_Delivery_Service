@@ -6,6 +6,7 @@ import { AccountPageComponent } from './components/account-page/account-page.com
 import { RegistrationPageComponent } from './components/registration-page/registration-page.component';
 import { HistoryPageComponent } from './components/history-page/history-page.component';
 import { SingleStoreComponent } from './components/single-store/single-store.component';
+import { SuccessfulRegistrationComponent } from './components/successful-registration/successful-registration.component';
 
 
 export const routes: Routes = [
@@ -13,6 +14,7 @@ export const routes: Routes = [
     { path:'login', component:LandingPageComponent},
     { path:'home', component:HomePageComponent},
     { path:'registration', component:RegistrationPageComponent},
+    { path: 'confirmation', component:SuccessfulRegistrationComponent},
     { path: 'account', component:AccountPageComponent},
     { path: 'history', component:HistoryPageComponent},
     { path: 'store/:id', component:SingleStoreComponent},

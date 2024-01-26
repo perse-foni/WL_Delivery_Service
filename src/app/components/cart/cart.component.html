@@ -1,51 +1,55 @@
 <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
-    <div class="offcanvas-header">
-        <h2 class="offcanvas-title" id="offcanvasExampleLabel">Your Order</h2>
-        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    <div class="emptyCartWrap" *ngIf="isCartEmpty(); else cartNotEmpty">
+        <app-empty-cart />
     </div>
-    <div class="offcanvas-body bodyWrap">
-        <div>
-            @for(product of service.getItems(); track product.id) {
-            <div class="container pt-2">
-                <div class="row">
-                    <div class="card mb-3">
-                        <div class="d-flex justify-content-around">
-                            <div class="col-md-4 pt-3">
-                                <img src="{{ product.avatar }}" class="rounded productImg" alt="..." />
-                            </div>
 
-                            <div class="col-md-8">
-                                <div class="card-body">
-                                    <div class="textWrap">
-                                        <h5 class="card-title fontSize">{{ product.name }}</h5>
-                                        <p class="card-text text-wrap truncateLineClamp fontSize">
-                                            {{ product.description }}
-                                        </p>
-                                    </div>
-                                    <div class="d-flex justify-content-between">
-                                        <p class="card-text fs-6 marginBlock mt-2">
-                                            <small class="text-info fw-medium ">{{ product.price }} €</small>
-                                        </p>
+    <ng-template #cartNotEmpty>
+        <div class="offcanvas-header">
+            <h2 class="offcanvas-title" id="offcanvasExampleLabel">Your Order</h2>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body bodyWrap">
+            <div>
+                @for(product of service.getItems(); track product.id) {
+                <div class="container pt-2">
+                    <div class="row">
+                        <div class="card mb-3">
+                            <div class="d-flex justify-content-around">
+                                <div class="col-md-4 pt-3">
+                                    <img src="{{ product.avatar }}" class="rounded productImg" alt="..." />
+                                </div>
 
-                                        <div class="d-flex align-items-center" style="max-width: 150px">
-                                            <button class="btn" (click)="service.decreaseQuantity(product.id)"
-                                                onclick="this.parentNode.querySelector('input[type=number]').stepDown()">
-                                                -
-                                            </button>
-
-                                            <p class="text-info fs-6 marginBlock">
-                                                {{ product.quantity }}
+                                <div class="col-md-8">
+                                    <div class="card-body">
+                                        <div class="textWrap">
+                                            <h5 class="card-title fontSize">{{ product.name }}</h5>
+                                            <p class="card-text text-wrap truncateLineClamp fontSize">
+                                                {{ product.description }}
+                                            </p>
+                                        </div>
+                                        <div class="d-flex justify-content-between">
+                                            <p class="card-text fs-6 marginBlock mt-2">
+                                                <small class="text-info fw-medium ">{{ product.price }} €</small>
                                             </p>
 
-                                            <button class="btn" (click)="service.increaseQuantity(product.id)"
-                                                onclick="this.parentNode.querySelector('input[type=number]').stepUp()">
-                                                +
-                                            </button>
-                                        </div>
-                                        <div>
-                                            <button class="btn" (click)="deleteFromCart(product)">
-                                                <img src="../../../assets/icons/trash.svg" class="svgIcon pb-1" />
-                                            </button>
+                                            <div class="d-flex align-items-center" style="max-width: 150px">
+                                                <button class="btn" (click)="service.decreaseQuantity(product.id)">
+                                                    -
+                                                </button>
+
+                                                <p class="text-info fs-6 marginBlock">
+                                                    {{ product.quantity }}
+                                                </p>
+
+                                                <button class="btn" (click)="service.increaseQuantity(product.id)">
+                                                    +
+                                                </button>
+                                            </div>
+                                            <div>
+                                                <button class="btn" (click)="deleteFromCart(product)">
+                                                    <img src="../../../assets/icons/trash.svg" class="svgIcon pb-1" />
+                                                </button>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -53,19 +57,20 @@
                         </div>
                     </div>
                 </div>
+                }
+
+
+                <hr>
+                <div class="d-flex justify-content-end pe-5">
+                    <p class="text-info fs-5">Total &nbsp; {{ service.getTotal() }} €</p>
+
+                </div>
+                <div class=" d-grid gap-2 checkoutWrap">
+                    <button class="btn btn-primary checkoutBtn fs-5 fw-medium" type="button">Checkout</button>
+                </div>
+
             </div>
-            }
-
-
-            <hr>
-            <div class="d-flex justify-content-end pe-5">
-                <p class="text-info fs-5">Total &nbsp; {{ service.getTotal() }} €</p>
-
-            </div>
-            <div class=" d-grid gap-2 checkoutWrap">
-                <button class="btn btn-primary checkoutBtn fs-5 fw-medium" type="button">Checkout</button>
-            </div>
-
         </div>
-    </div>
+    </ng-template>
+
 </div>
