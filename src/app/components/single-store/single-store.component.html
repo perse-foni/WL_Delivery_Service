@@ -1,12 +1,11 @@
 <div class="container">
     <div>
-        <div class="pb-2">
-            <img src={{store.avatar}} class="rounded-bottom avatar" class="card-img" alt="...">
+        <div class="pb-2 pt-3">
+            <img src={{store.avatar}} class="rounded avatar card-img" alt="...">
         </div>
 
         <div>
             <h1>{{store.name}}</h1>
-
             <div class="d-flex justify-content-between">
                 <div class="d-flex pt-2">
                     <p class="d-flex">{{store.description}}</p>
@@ -36,12 +35,10 @@
                         <app-product [product]="product" />
                     </div>
                     } @empty {
-                    <h2>No data available</h2>
+                  <app-no-products />
                     }
                 </div>
             </div>
         </div>
     </div>
-
-
     <app-cart />

@@ -44,10 +44,13 @@ export class CartService {
     let item = this.items.find((i) => i.id === id);
     if (item && item.quantity > 0) {
       item.quantity--;
+      if (item.quantity === 0) {
+        this.delete(item);
+      }
       localStorage.setItem('cartItems', JSON.stringify(this.items));
     }
   }
-
+  
   getTotal() {
     const total = this.items.reduce(
       (acc, item) => acc + item.price * item.quantity,

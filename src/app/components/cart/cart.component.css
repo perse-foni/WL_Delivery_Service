@@ -35,19 +35,18 @@
 }
 
 .svgIcon {
-  filter: invert(64%) sepia(75%) saturate(1658%) hue-rotate(144deg)
-    brightness(98%) contrast(92%);
+  filter: invert(33%) sepia(86%) saturate(3326%) hue-rotate(140deg) brightness(86%) contrast(80%);
 }
 
 .checkoutWrap {
   position: absolute;
   bottom: 10px;
-  width: 95%;
+  width: 90%;
 }
 
 .checkoutBtn {
   background-color: #ffcf07;
   height: 60px;
   border: none;
-  color: black;
+  color: #143727;
 }
