@@ -4,13 +4,12 @@ import { StoresService } from '../../services/stores.service';
 import { ActivatedRoute } from '@angular/router';
 import { ProductComponent } from '../product/product.component';
 import { CartComponent } from '../cart/cart.component';
-import { NoProductsComponent } from '../no-products/no-products.component';
 import { CartService } from '../../services/cart.service';
 
 @Component({
   selector: 'app-single-store',
   standalone: true,
-  imports: [CommonModule, ProductComponent, CartComponent, NoProductsComponent],
+  imports: [CommonModule, ProductComponent, CartComponent],
   templateUrl: './single-store.component.html',
   styleUrl: './single-store.component.css',
 })
