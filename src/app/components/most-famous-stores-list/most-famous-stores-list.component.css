@@ -1,0 +1,70 @@
+.mostFamousStores-card {
+  width: 300px;
+  height: 350px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.mostFamousStores-image {
+  width: 100%;
+  height: auto;
+  border-bottom: 1px solid #ddd;
+}
+
+.mostFamousStores-details {
+  padding: 15px;
+}
+
+.mostFamousStores-name {
+  font-size: 18px;
+  margin: 10px 0;
+}
+.custom-carousel {
+  margin-top: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.p-carousel-prev,
+.p-carousel-next {
+  background-color: #3498db;
+  color: #fff;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+}
+
+.p-carousel-indicators {
+  margin-top: 16px;
+}
+
+.p-carousel-indicator {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: #95a5a6;
+  margin: 0 4px;
+}
+
+.p-carousel-indicator-active {
+  background-color: #3498db;
+}
+
+.text-wrap {
+  display: flex;
+  justify-content: space-between;
+}
+
+.rating-wrap {
+  display: flex;
+}
+
+.svgIcon {
+  padding-bottom: 15px;
+  filter: invert(84%) sepia(46%) saturate(1160%) hue-rotate(347deg)
+    brightness(98%) contrast(107%);
+  margin-right: 5px;
+}
