@@ -8,15 +8,15 @@
             <h1>{{store.name}}</h1>
 
             <div class="d-flex justify-content-between">
-                <div class="d-flex">
-                    <p>{{store.description}}</p>
-                    <div class="d-flex">
-                        <p class="list-group-item fs-6 pe-1"> {{store.rating}}</p>
+                <div class="d-flex pt-2">
+                    <p class="d-flex">{{store.description}}</p>
+                    <div class="d-flex ps-3">
+                        <p class="list-group-item pe-1"> {{store.rating}}</p>
                         <img src="../../../assets/icons/reviews.svg" class="svgIcon pb-3" />
                     </div>
                 </div>
 
-                <div class="container-fluid">
+                <div>
                     <form class="d-flex" role="search">
                         <input class="form-control me-2" type="search" placeholder="Search in {{store.name}}"
                             aria-label="Search">
@@ -28,11 +28,11 @@
 
         <div class="pt-5">
             <h3>Menu</h3>
-            
-            <div>
-                <div>
+
+            <div class="grid">
+                <div class="row">
                     @for (product of store.products; track product.id) {
-                    <div>
+                    <div class="col d-inline-flex justify-content-center p-1">
                         <app-product [product]="product" />
                     </div>
                     } @empty {
@@ -44,3 +44,4 @@
     </div>
 
 
+    <app-cart />

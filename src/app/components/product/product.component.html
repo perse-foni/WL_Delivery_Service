@@ -1,0 +1,47 @@
+<div class="container pt-2">
+    <div class="row">
+        <div class="card cardAnimation mb-3 cardWrap">
+            <div class="d-flex justify-content-around">
+                <div class="col-md-4 pt-3">
+                    <img src="{{ product.avatar }}" class="rounded productImg" alt="..." />
+                </div>
+
+                <div class="col-md-8">
+                    <div class="card-body">
+                        <div class="textWrap ">
+                            <h5 class="card-title fontSize">{{ product.name }}</h5>
+                            <p class="card-text text-wrap truncateLineClamp fontSize">
+                                {{ product.description }}
+                            </p>
+                        </div>
+                        <div class="d-flex">
+                            <p class="card-text m-0 pt-2 fs-6">
+                                <small class="text-info fw-medium">{{ product.price }} €</small>
+                            </p>
+
+                            <div class="d-flex counterWrap" style="max-width: 150px">
+                                <button class="btn" (click)="service.decreaseQuantity(product.id)"
+                                    onclick="this.parentNode.querySelector('input[type=number]').stepDown()">
+                                    -
+                                </button>
+
+                                <!--<input id="form1" min="0" name="quantity" value="{{ getQuantity(product.id) }}" type="number"
+                                        -->
+                                <div class="form-outline d-flex">
+                                    <input id="form1" min="0" name="quantity" value="0" type="number"
+                                        class="form-control text-info" />
+                                    <label class="form-label" for="form1"></label>
+                                </div>
+
+
+                                <button class="btn" (click)="addToCart(product)"
+                                    onclick="this.parentNode.querySelector('input[type=number]').stepUp()">+
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

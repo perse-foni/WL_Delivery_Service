@@ -4,3 +4,6 @@
     margin-left: -55px;
 } 
 
+.svgIcon {
+    filter: invert(45%) sepia(61%) saturate(7484%) hue-rotate(208deg) brightness(100%) contrast(99%);
+}
