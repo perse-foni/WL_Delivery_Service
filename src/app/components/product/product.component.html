@@ -19,23 +19,14 @@
                                 <small class="text-info fw-medium">{{ product.price }} €</small>
                             </p>
 
-                            <div class="d-flex counterWrap" style="max-width: 150px">
-                                <button class="btn" (click)="service.decreaseQuantity(product.id)"
-                                    onclick="this.parentNode.querySelector('input[type=number]').stepDown()">
+                            <div class="d-flex align-items-center counterWrap" style="max-width: 150px">
+                                <button class="btn" (click)="service.decreaseQuantity(product.id)">
                                     -
                                 </button>
-
-                                <!--<input id="form1" min="0" name="quantity" value="{{ getQuantity(product.id) }}" type="number"
-                                        -->
-                                <div class="form-outline d-flex">
-                                    <input id="form1" min="0" name="quantity" value="0" type="number"
-                                        class="form-control text-info" />
-                                    <label class="form-label" for="form1"></label>
-                                </div>
-
-
-                                <button class="btn" (click)="addToCart(product)"
-                                    onclick="this.parentNode.querySelector('input[type=number]').stepUp()">+
+                                <p class="text-info fs-6 marginBlock">
+                                    {{ getQuantity(product.id)}}
+                                </p>
+                                <button class="btn" (click)="addToCart(product)">+
                                 </button>
                             </div>
                         </div>

@@ -1,9 +1,41 @@
-.dropdown-menu { 
-    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1)!important; 
-    margin-top:-5px !important;  
-    margin-left: -55px;
-} 
+.dropdown-menu {
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1) !important;
+  margin-top: -5px !important;
+  margin-left: -55px;
+}
 
 .svgIcon {
-    filter: invert(45%) sepia(61%) saturate(7484%) hue-rotate(208deg) brightness(100%) contrast(99%);
+  filter: invert(45%) sepia(61%) saturate(7484%) hue-rotate(208deg)
+    brightness(100%) contrast(99%);
+}
+
+.relative {
+  position: relative;
+}
+
+.badge {
+  box-sizing: border-box;
+  color: white;
+  font-family: sans-serif;
+  font-size: 16px;
+  letter-spacing: -1px;
+  position: absolute;
+  bottom: 77%;
+  right: 18px;
+  min-width: 1em;
+  padding-left: 0.2em;
+  padding-right: 0.2em;
+  height: 1em;
+  margin-bottom: -0.6em;
+  margin-right: -0.6em;
+  background-color: #143727;
+  border-radius: 1em;
+  text-align: center;
+  line-height: 1em;
+  padding: 0;
+  z-index: 1;
+}
+
+.badgeNumber {
+  font-size: 0.6em;
 }

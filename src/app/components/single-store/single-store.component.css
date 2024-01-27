@@ -13,3 +13,8 @@
     filter: invert(84%) sepia(46%) saturate(1160%) hue-rotate(347deg) brightness(98%) contrast(107%);
     padding-left: 7px;
 }
+
+.avatar {
+    max-height: 360px;
+    object-fit: cover;
+}

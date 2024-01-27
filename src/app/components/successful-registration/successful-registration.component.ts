@@ -3,12 +3,10 @@ import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
 
 @Component({
-  selector: 'app-registration-form',
+  selector: 'app-successful-registration',
   standalone: true,
   imports: [CommonModule, RouterModule],
-  templateUrl: './registration-form.component.html',
-  styleUrl: './registration-form.component.css'
+  templateUrl: './successful-registration.component.html',
+  styleUrl: './successful-registration.component.css',
 })
-export class RegistrationFormComponent {
-
-}
+export class SuccessfulRegistrationComponent {}

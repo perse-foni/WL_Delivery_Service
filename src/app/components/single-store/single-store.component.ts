@@ -4,6 +4,7 @@ import { StoresService } from '../../services/stores.service';
 import { ActivatedRoute } from '@angular/router';
 import { ProductComponent } from '../product/product.component';
 import { CartComponent } from '../cart/cart.component';
+import { CartService } from '../../services/cart.service';
 
 @Component({
   selector: 'app-single-store',
@@ -15,6 +16,7 @@ import { CartComponent } from '../cart/cart.component';
 export class SingleStoreComponent {
   id: any;
   service = inject(StoresService);
+  cartService =inject (CartService);
   store: any = {};
 
   constructor(private activatedRoute: ActivatedRoute) {}
@@ -22,6 +24,8 @@ export class SingleStoreComponent {
   ngOnInit() {
     this.id = this.activatedRoute.snapshot.paramMap.get('id');
     console.log(this.id);
+
+    this.cartService.clearCart();
 
     this.service.getStores().subscribe({
       next: (stores) => {

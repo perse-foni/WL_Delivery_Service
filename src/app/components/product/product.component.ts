@@ -12,7 +12,6 @@ import { CartService } from '../../services/cart.service';
   styleUrl: './product.component.css',
 })
 export class ProductComponent {
-
   service = inject(CartService);
 
   @Input() product: Product = {
@@ -27,5 +26,11 @@ export class ProductComponent {
   addToCart(product: any) {
     this.service.addtoCart(product);
     console.log('addToCart is working');
+  }
+
+  getQuantity(productId: number): number {
+    const cartItems = this.service.getItems();
+    const item = cartItems.find((i) => i.id === productId);
+    return item ? item.quantity : 0;
   }
 }
