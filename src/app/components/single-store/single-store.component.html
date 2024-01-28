@@ -6,7 +6,7 @@
 
         <div>
             <h1>{{store.name}}</h1>
-            <div class="d-flex justify-content-between">
+            <div class="d-flex justify-content-between flex-wrap">
                 <div class="d-flex pt-2">
                     <p class="d-flex">{{store.description}}</p>
                     <div class="d-flex ps-3">
@@ -35,7 +35,7 @@
                         <app-product [product]="product" />
                     </div>
                     } @empty {
-                 
+                    <app-no-products />
                     }
                 </div>
             </div>

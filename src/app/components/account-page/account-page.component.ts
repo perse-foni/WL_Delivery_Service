@@ -12,7 +12,7 @@ import { ProfileService } from '../../services/profile.service';
 })
 export class AccountPageComponent {
   
-  user: any;
+  user: any = {};
   service = inject(ProfileService)
 
   ngOnInit() {

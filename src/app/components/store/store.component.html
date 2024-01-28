@@ -1,14 +1,14 @@
 <a class="nav-link" routerLink="/store/{{ store.id }}">
   <div>
-    <div class="card cardAnimation mb-5 bg-body-tertiary rounded" style="width: 25rem">
+    <div class="card cardAnimation mb-2 rounded" style="width: 20rem">
       <img src={{store.avatar}} class="card-img-top" alt="...">
       <div class="card-body">
-        <h3 class="card-title">{{ store.name }}</h3>
+        <h5 class="card-title">{{ store.name }}</h5>
         <div class="d-flex justify-content-between">
-          <p class="card-text text-secondary fs-6">{{ store.description }}</p>
+          <p class="card-text text-secondary fontSize">{{ store.description }}</p>
           <div class="d-flex justify-content-between">
             <p class="list-group-item text-secondary fs-6"> {{ store.rating }}</p>
-            <img src="../../../assets/icons/reviews.svg" class="svgIcon" />
+            <img src="../../../assets/icons/star.svg" class="svgIcon" />
           </div>
         </div>
       </div>

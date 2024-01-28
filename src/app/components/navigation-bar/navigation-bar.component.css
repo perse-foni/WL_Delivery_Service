@@ -5,8 +5,7 @@
 }
 
 .svgIcon {
-  filter: invert(45%) sepia(61%) saturate(7484%) hue-rotate(208deg)
-    brightness(100%) contrast(99%);
+    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(350deg) brightness(106%) contrast(101%);
 }
 
 .relative {
@@ -14,28 +13,65 @@
 }
 
 .badge {
-  box-sizing: border-box;
-  color: white;
-  font-family: sans-serif;
-  font-size: 16px;
-  letter-spacing: -1px;
-  position: absolute;
-  bottom: 77%;
-  right: 18px;
-  min-width: 1em;
-  padding-left: 0.2em;
-  padding-right: 0.2em;
-  height: 1em;
-  margin-bottom: -0.6em;
-  margin-right: -0.6em;
-  background-color: #143727;
-  border-radius: 1em;
-  text-align: center;
-  line-height: 1em;
-  padding: 0;
-  z-index: 1;
+    box-sizing: border-box;
+    color: white;
+    font-family: sans-serif;
+    font-size: 13px;
+    letter-spacing: -1px;
+    position: absolute;
+    bottom: 35%;
+    right: 18px;
+    min-width: 1em;
+    padding-left: 0.2em;
+    padding-right: 0.2em;
+    height: 1em;
+    margin-right: -0.6em;
+    background-color: #ffcf07;
+    border-radius: 1em;
+    text-align: center;
+    line-height: 1em;
+    padding: 0;
+    z-index: 1;
 }
 
 .badgeNumber {
-  font-size: 0.6em;
+  font-size: 0.9em;
+  color: #143727;
+}
+
+.navBar {
+    --bs-navbar-color: #fff;
+    background-color: #143727;
+    --bs-navbar-hover-color: #ffcf07;  
+    z-index: 1;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+
+.navbar-nav {
+    --bs-nav-link-padding-x:1;
+}
+
+.nav-link.show {
+    color: #ffcf07;
+}
+
+.logo {
+    width: 100px;
+}
+
+.navbar-toggler {
+    background-color: #ffcf07;
+}
+
+.dropdown-menu {
+    position: absolute;
+}
+
+.svgAvatar {
+    filter: invert(100%) sepia(0%) saturate(1420%) hue-rotate(105deg) brightness(115%) contrast(106%);
 }
