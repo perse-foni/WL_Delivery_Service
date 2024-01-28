@@ -8,29 +8,11 @@
     [numVisible]="4"
     [numScroll]="3"
     [circular]="true"
-    [autoplayInterval]="3000"
+    [autoplayInterval]="3000" 
     styleClass="custom-carousel"
   >
-    <ng-template let-mostFamousStores pTemplate="item">
-      <div class="mostFamousStores-card">
-        <img
-          [src]="mostFamousStores.avatar"
-          [alt]="mostFamousStores.name"
-          class="mostFamousStores-image"
-        />
-        <div class="mostFamousStores-details">
-          <h4 class="mostFamousStores-name">{{ mostFamousStores.name }}</h4>
-          <p class="mostFamousStores-description">
-            {{ mostFamousStores.description }}
-          </p>
-          <div class="rating-wrap">
-            <img src="../../../assets/icons/star.svg" class="svgIcon" />
-            <p class="mostFamousStores-rating">
-              {{ mostFamousStores.rating }}
-            </p>
-          </div>
-        </div>
-      </div>
+    <ng-template let-mostfamousStores pTemplate="item">
+      <app-most-famous-store [famousStore]="mostfamousStores" />
     </ng-template>
   </p-carousel>
 </div>

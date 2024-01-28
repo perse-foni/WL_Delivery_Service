@@ -18,7 +18,19 @@
 }
 
 .svgIcon {
-padding-bottom: 15px;
-filter: invert(84%) sepia(46%) saturate(1160%) hue-rotate(347deg) brightness(98%) contrast(107%);
-padding-left: 7px;
+    padding-bottom: 15px;
+    filter: invert(84%) sepia(46%) saturate(1160%) hue-rotate(347deg) brightness(98%) contrast(107%);
+    padding-left: 7px;
 }
+
+.truncateLineClamp {
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    width: 316px;
+    overflow: hidden;
+  }
+
+  .fontSize {
+    font-size: 13px;
+  }

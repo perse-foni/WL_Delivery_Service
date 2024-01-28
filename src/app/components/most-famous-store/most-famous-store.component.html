@@ -1,14 +1,14 @@
 <a class="nav-link" routerLink="/store/{{ famousStore.id }}">
   <div>
     <div
-      class="card cardAnimation mb-5 bg-body-tertiary rounded"
-      style="width: 25rem"
+      class="card cardAnimation mb-2 rounded"
+      style="width: 20rem"
     >
       <img src="{{ famousStore.avatar }}" class="card-img-top" alt="..." />
       <div class="card-body">
-        <h3 class="card-title">{{ famousStore.name }}</h3>
+        <h5 class="card-title">{{ famousStore.name }}</h5>
         <div class="text-wrap">
-          <p class="card-text text-secondary fs-6">
+          <p class="card-text text-secondary fontSize truncateLineClamp">
             {{ famousStore.description }}
           </p>
           <div class="rating-wrap">

@@ -12,16 +12,7 @@
     styleClass="custom-carousel"
   >
     <ng-template let-category pTemplate="item">
-      <div class="category-card">
-        <img
-          [src]="category.avatar"
-          [alt]="category.category"
-          class="category-image"
-        />
-        <div class="category-details">
-          <h4 class="category-name">{{ category.category }}</h4>
-        </div>
-      </div>
+      <app-category [category]="category"/>
     </ng-template>
   </p-carousel>
 </div>
