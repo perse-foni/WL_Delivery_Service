@@ -12,6 +12,23 @@
       <app-search />
 
       <div class="d-flex">
+        <div>
+          <div class="d-flex relative">
+            <div class="badge">
+              <p class="badgeNumber">{{ getTotalQuantity() }}</p>
+            </div>
+    
+            <a
+              class="btn"
+              data-bs-toggle="offcanvas"
+              href="#offcanvasExample"
+              role="button"
+              aria-controls="offcanvasExample"
+            >
+              <img src="../../../assets/icons/cart.svg" class="svgIcon pt-3" />
+            </a>
+          </div>
+        </div>
         <div class="justify-content-end pt-4">
           <ul class="navbar-nav d-flex justify-content-end">
             <div class="d-flex justify-content-end pe-2">
@@ -65,23 +82,7 @@
           </ul>
   
         </div>
-        <div>
-          <div class="d-flex relative">
-            <div class="badge">
-              <p class="badgeNumber">{{ getTotalQuantity() }}</p>
-            </div>
-    
-            <a
-              class="btn"
-              data-bs-toggle="offcanvas"
-              href="#offcanvasExample"
-              role="button"
-              aria-controls="offcanvasExample"
-            >
-              <img src="../../../assets/icons/cart.svg" class="svgIcon pt-3" />
-            </a>
-          </div>
-        </div>
+       
       </div>
 
     </div>
