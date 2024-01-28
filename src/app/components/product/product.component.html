@@ -16,14 +16,14 @@
                         </div>
                         <div class="d-flex">
                             <p class="card-text m-0 pt-2 fs-6">
-                                <small class="text-info fw-medium">{{ product.price }} €</small>
+                                <small class="text-success fw-medium">{{ product.price }} €</small>
                             </p>
 
                             <div class="d-flex align-items-center counterWrap" style="max-width: 150px">
                                 <button class="btn" (click)="service.decreaseQuantity(product.id)">
                                     -
                                 </button>
-                                <p class="text-info fs-6 marginBlock">
+                                <p class="text-success fs-6 marginBlock">
                                     {{ getQuantity(product.id)}}
                                 </p>
                                 <button class="btn" (click)="addToCart(product)">+

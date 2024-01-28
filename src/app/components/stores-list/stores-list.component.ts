@@ -17,7 +17,7 @@ export class StoresListComponent {
   service = inject(StoresService);
 
   storeList: Store[] = [];
-  skeletons: number[] = Array(9);
+  skeletons: number[] = Array(8);
   
   ngOnInit() {
     this.service.getStores().subscribe({
