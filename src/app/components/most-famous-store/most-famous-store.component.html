@@ -1,23 +1,21 @@
 <a class="nav-link" routerLink="/store/{{ famousStore.id }}">
-  <div>
-    <div
-      class="card cardAnimation mb-5 bg-body-tertiary rounded"
-      style="width: 25rem"
-    >
-      <img src="{{ famousStore.avatar }}" class="card-img-top" alt="..." />
-      <div class="card-body">
-        <h3 class="card-title">{{ famousStore.name }}</h3>
-        <div class="text-wrap">
-          <p class="card-text text-secondary fs-6">
-            {{ famousStore.description }}
-          </p>
-          <div class="rating-wrap">
-            <p class="list-group-item text-secondary fs-6">
-              {{ famousStore.rating }}
-            </p>
-            <img src="../../../assets/icons/star.svg" class="svgIcon" />
-          </div>
-        </div>
+  <div class="mostFamousStores-card">
+    <img
+      [src]="famousStore.avatar"
+      [alt]="famousStore.name"
+      class="mostFamousStores-image"
+    />
+    <div class="mostFamousStores-details">
+      <h4 class="mostFamousStores-name">{{ famousStore.name }}</h4>
+
+      <p class="mostFamousStores-description">
+        {{ famousStore.description }}
+      </p>
+      <div class="rating-wrap">
+        <img src="../../../assets/icons/star.svg" class="svgIcon" />
+        <p class="mostFamousStores-rating">
+          {{ famousStore.rating }}
+        </p>
       </div>
     </div>
   </div>

@@ -1,9 +1,54 @@
-.cardAnimation {
-    box-shadow: 0 6px 10px rgba(0,0,0,.08), 0 0 6px rgba(0,0,0,.05);
-    transition: .3s transform cubic-bezier(.155,1.105,.295,1.12),.3s box-shadow,.3s -webkit-transform cubic-bezier(.155,1.105,.295,1.12);
+.category-card {
+  width: 200px;
+  height: fit-content;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
 }
 
-.cardAnimation:hover{
-    transform: scale(1.02);
-    box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
+.category-image {
+  width: 100%;
+  height: auto;
+  border-bottom: 1px solid #ddd;
+}
+
+.category-details {
+  padding: 15px;
+}
+
+.category-name {
+  font-size: 18px;
+  margin: 10px 0;
+}
+.custom-carousel {
+  margin-top: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.p-carousel-prev,
+.p-carousel-next {
+  background-color: #3498db;
+  color: #fff;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+}
+
+.p-carousel-indicators {
+  margin-top: 16px;
+}
+
+.p-carousel-indicator {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: #95a5a6;
+  margin: 0 4px;
+}
+
+.p-carousel-indicator-active {
+  background-color: #3498db;
 }
