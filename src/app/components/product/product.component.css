@@ -23,10 +23,6 @@
   height: 70px;
 }
 
-.fontSize {
-  font-size: 13px;
-}
-
 .truncateLineClamp {
   display: -webkit-box;
   -webkit-line-clamp: 2;
@@ -35,17 +31,15 @@
   overflow: hidden;
 }
 
+
+.fontSize {
+  font-size: 13px;
+}
+
 .counterWrap {
   padding-left: 160px;
 }
 
-input {
-  width: 40px;
-  border: none;
-}
-
-input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
+.marginBlock {
+  margin-block: 0;
 }

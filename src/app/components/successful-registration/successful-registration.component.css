@@ -1,0 +1,28 @@
+img {
+  width: 15%;
+}
+
+.wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center
+}
+
+.container {
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(52, 77, 101, 0.1);
+    padding: 25px;
+    margin-top: 30px;
+}
+
+.button {
+    --bs-btn-border-color: #143727;
+    --bs-btn-bg: #143727;
+    --bs-btn-color: #fff;
+    --bs-btn-hover-bg: #ffcf07;
+    --bs-btn-hover-border-color: #ffcf07;
+    --bs-btn-hover-color: #143727;
+    height: 30px;
+    padding-top: 2px;
+}
