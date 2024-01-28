@@ -1,12 +1,12 @@
-<a class="nav-link" routerLink="/category/{{category.id}}">
-    <div>
-        <div class="card cardAnimation mb-5 bg-body-tertiary rounded" aria-hidden="true" style="width: 10rem;">
-            <div>
-                <img src={{category.avatar}} class="card-img-top" alt="...">
-            </div>
-            <div class="card-body">
-                <h5 class="card-title fs-5 placeholder-glow">{{category.category}}</h5>
-            </div>
-        </div>
+<a class="nav-link" routerLink="/category/{{ category.id }}">
+  <div class="category-card">
+    <img
+      [src]="category.avatar"
+      [alt]="category.category"
+      class="category-image"
+    />
+    <div class="category-details">
+      <h4 class="category-name">{{ category.category }}</h4>
     </div>
+  </div>
 </a>
