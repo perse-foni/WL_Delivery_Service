@@ -1,6 +1,6 @@
 .mostFamousStores-card {
   width: 300px;
-  height: 350px;
+  height: fit-content;
   border: 1px solid #ddd;
   border-radius: 8px;
   overflow: hidden;
@@ -67,4 +67,12 @@
   filter: invert(84%) sepia(46%) saturate(1160%) hue-rotate(347deg)
     brightness(98%) contrast(107%);
   margin-right: 5px;
+}
+
+.truncateLineClamp {
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  width: 220px;
+  overflow: hidden;
 }

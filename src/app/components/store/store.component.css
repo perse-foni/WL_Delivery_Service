@@ -17,3 +17,11 @@
 .fontSize {
     font-size: 13px;
   }
+
+  .truncateLineClamp {
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    width: 220px;
+    overflow: hidden;
+  }
