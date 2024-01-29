@@ -1,10 +1,11 @@
 .mostFamousStores-card {
   width: 300px;
-  height: 350px;
+  height: fit-content;
   border: 1px solid #ddd;
   border-radius: 8px;
   overflow: hidden;
   transition: transform 0.3s ease;
+  padding: 10px;
 }
 
 .mostFamousStores-image {
