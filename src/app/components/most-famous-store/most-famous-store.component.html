@@ -8,14 +8,16 @@
     <div class="mostFamousStores-details">
       <h4 class="mostFamousStores-name">{{ famousStore.name }}</h4>
 
-      <p class="mostFamousStores-description">
-        {{ famousStore.description }}
-      </p>
-      <div class="rating-wrap">
-        <img src="../../../assets/icons/star.svg" class="svgIcon" />
-        <p class="mostFamousStores-rating">
-          {{ famousStore.rating }}
+      <div class="d-flex justify-content-between">
+        <p class="mostFamousStores-description truncateLineClamp">
+          {{ famousStore.description }}
         </p>
+        <div class="rating-wrap">
+          <img src="../../../assets/icons/star.svg" class="svgIcon" />
+          <p class="mostFamousStores-rating">
+            {{ famousStore.rating }}
+          </p>
+        </div>
       </div>
     </div>
   </div>

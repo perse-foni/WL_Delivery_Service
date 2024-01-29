@@ -69,3 +69,11 @@
     brightness(98%) contrast(107%);
   margin-right: 5px;
 }
+
+.truncateLineClamp {
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  width: 220px;
+  overflow: hidden;
+}
