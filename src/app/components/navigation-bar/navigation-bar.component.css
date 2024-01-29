@@ -70,6 +70,13 @@
 
 .dropdown-menu {
     position: absolute;
+    margin-top: -2px !important;
+    margin-left: -100px;
+}
+
+.dropdown-item:active {
+    background-color:#ffcf07;
+    color: black;
 }
 
 .svgAvatar {

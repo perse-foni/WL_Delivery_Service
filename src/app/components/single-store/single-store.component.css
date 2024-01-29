@@ -18,3 +18,22 @@
     max-height: 360px;
     object-fit: cover;
 }
+
+.button {
+    --bs-btn-border-color: #143727;
+    --bs-btn-bg: #143727;
+    --bs-btn-color: #fff;
+    --bs-btn-hover-bg: #ffcf07;
+    --bs-btn-hover-border-color: #ffcf07;
+    --bs-btn-hover-color: #143727;
+    height: 30px;
+    padding-top: 2px;
+}
+
+input {
+    height: 30px;
+}
+
+.fontSize {
+    font-size: 13px;
+}
