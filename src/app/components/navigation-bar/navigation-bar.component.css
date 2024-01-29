@@ -82,3 +82,7 @@
 .svgAvatar {
     filter: invert(100%) sepia(0%) saturate(1420%) hue-rotate(105deg) brightness(115%) contrast(106%);
 }
+
+.canvasBtn {
+    border: none;
+}

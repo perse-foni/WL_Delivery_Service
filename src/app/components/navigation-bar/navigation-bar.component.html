@@ -1,4 +1,4 @@
-<div >
+<div>
   <nav class="navbar sticky navBar navbar-expand-lg navbar-light ps-3 pe-3">
     <div class="container-fluid">
       <a class="navbar-brand" routerLink="home" routerLinkActive="active">
@@ -8,7 +8,7 @@
           alt="  WL Delivery Service Logo"
         />
       </a>
-      
+
       <app-search />
 
       <div class="d-flex">
@@ -17,9 +17,9 @@
             <div class="badge">
               <p class="badgeNumber">{{ getTotalQuantity() }}</p>
             </div>
-    
+
             <a
-              class="btn"
+              class="btn canvasBtn"
               data-bs-toggle="offcanvas"
               href="#offcanvasExample"
               role="button"
@@ -42,7 +42,6 @@
                   data-bs-placement="center"
                   aria-expanded="false"
                 >
- 
                   <img
                     src="\assets\icons\avatar.svg"
                     alt=""
@@ -56,15 +55,15 @@
                       routerLink="account"
                       routerLinkActive="active"
                       >Account page
-                      </a>
+                    </a>
                   </li>
                   <li><hr class="dropdown-divider" /></li>
                   <li>
-                    <a 
-                    class="dropdown-item" 
-                    routerLink="history" 
-                    routerLinkActive="active"
-                    >Orders</a
+                    <a
+                      class="dropdown-item"
+                      routerLink="history"
+                      routerLinkActive="active"
+                      >Orders</a
                     >
                   </li>
                   <li><hr class="dropdown-divider" /></li>
@@ -80,11 +79,8 @@
               </li>
             </div>
           </ul>
-  
         </div>
-       
       </div>
-
     </div>
   </nav>
 </div>
