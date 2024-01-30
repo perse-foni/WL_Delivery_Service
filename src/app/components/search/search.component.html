@@ -1,13 +1,14 @@
 <div class="container">
     <div>
-        <form class="d-flex justify-content-center pt-3">
+        <form [formGroup]="searchForm" (ngSubmit)="getStoresByName()" class="d-flex" role="search">
             <input
-              class="form-control me-2" style="max-width: 200px;"
+              class="form-control me-2 fontSize" style="max-width: 200px;"
               type="search"
               placeholder="Search"
               aria-label="Search"
+              formControlName="searchValue"
             />
-            <button class="btn button" type="submit">Search</button>
+            <button class="btn button" type="submit" routerLink="stores">Search</button>
           </form>
     </div>
 </div>

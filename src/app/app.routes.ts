@@ -8,6 +8,7 @@ import { HistoryPageComponent } from './components/history-page/history-page.com
 import { SingleStoreComponent } from './components/single-store/single-store.component';
 import { SuccessfulRegistrationComponent } from './components/successful-registration/successful-registration.component';
 import { CategoryDisplayComponent } from './components/category-display/category-display.component';
+import { FoundStoresComponent } from './components/found-stores/found-stores.component';
 
 
 export const routes: Routes = [
@@ -20,6 +21,7 @@ export const routes: Routes = [
     { path: 'history', component:HistoryPageComponent},
     { path: 'store/:id', component:SingleStoreComponent},
     { path: 'category/:id', component:CategoryDisplayComponent},
+    { path: 'stores', component:FoundStoresComponent},
     { path: '', redirectTo: 'login', pathMatch: 'full'},  
     { path: '**', component:PageNotFoundComponent}
 ];
