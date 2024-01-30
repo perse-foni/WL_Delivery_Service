@@ -19,7 +19,7 @@ export class MostFamousStoresListComponent {
   service = inject(FamousStoresService);
   mostFamousStore: MostFamous[] = [];
 
-  skeletons: number[] = Array(5)
+  skeletons: number[] = Array(4)
 
   ngOnInit() {
     this.service.getMostFamous().subscribe({
