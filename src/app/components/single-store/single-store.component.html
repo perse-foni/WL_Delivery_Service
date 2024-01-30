@@ -15,13 +15,11 @@
                     </div>
                 </div>
 
-                <div>
-                    <form class="d-flex" role="search">
-                        <input class="form-control me-2 fontSize" type="search" placeholder="Search in {{store.name}}"
-                            aria-label="Search">
-                        <button class="btn button" type="submit">Search </button>
-                    </form>
-                </div>
+                <form [formGroup]="searchForm" (ngSubmit)="getProductsByName()" class="d-flex" role="search">
+                    <input class="form-control me-2 fontSize" type="search" placeholder="Search" aria-label="Search"
+                        formControlName="searchValue">
+                    <button class="btn button" type="submit">Search</button>
+                </form>
             </div>
         </div>
 

@@ -1,3 +1,7 @@
+.nav-link {
+  padding-right: 10px;
+}
+
 .mostFamousStores-card {
   width: 300px;
   height: fit-content;

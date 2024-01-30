@@ -2,17 +2,68 @@
   <h2>Most Famous</h2>
 </div>
 <div class="grid">
-  <p-carousel
-    *ngIf="mostFamousStores.length > 0"
-    [value]="mostFamousStores"
-    [numVisible]="4"
-    [numScroll]="2"
-    [circular]="true"
-    [autoplayInterval]="3000"
-    styleClass="custom-carousel"
-  >
-    <ng-template let-mostFamousStores pTemplate="item">
-      <app-most-famous-store [famousStore]="mostFamousStores" />
-    </ng-template>
-  </p-carousel>
+  <div *ngIf="mostFamousStores; else skeleton">
+    <p-carousel
+      [value]="mostFamousStores"
+      [numVisible]="4"
+      [numScroll]="2"
+      [circular]="true"
+ 
+      styleClass="custom-carousel"
+    >
+    <!-- [autoplayInterval]="3000" -->
+      <ng-template let-mostFamousStores pTemplate="item" >
+        <app-most-famous-store [famousStore]="mostFamousStores" />
+      </ng-template>
+    </p-carousel>
+  </div>
 </div>
+
+<ng-template #skeleton>
+  <p-carousel
+      [value]="[1,2,3,4]"
+      [numVisible]="4"
+      [numScroll]="2"
+      [circular]="true"
+ 
+      styleClass="custom-carousel"
+    >
+
+      <ng-template pTemplate="item" >
+        <div class="card mb-2 bg-body-tertiary rounded" style="width: 15rem">
+          <ngx-skeleton-loader
+          class="d-block"
+          count="1"
+          [theme]="{
+            width: '238px',
+            height: '150px',
+          }"
+        >
+        </ngx-skeleton-loader>
+   
+        <ngx-skeleton-loader
+          class="d-block ps-3"
+          count="1"
+          animation="pulse"
+          appearance="line"
+          [theme]="{
+            width: '150px'
+          }"
+        >
+        </ngx-skeleton-loader>
+   
+        <ngx-skeleton-loader
+          class="ps-3"
+          count="1"
+          animation="pulse"
+          appearance="line"
+          [theme]="{
+            width: '100px'
+          }"
+        >
+        </ngx-skeleton-loader>
+      </div>
+      </ng-template>
+    </p-carousel>
+  
+</ng-template>
