@@ -7,6 +7,7 @@ import { RegistrationPageComponent } from './components/registration-page/regist
 import { HistoryPageComponent } from './components/history-page/history-page.component';
 import { SingleStoreComponent } from './components/single-store/single-store.component';
 import { SuccessfulRegistrationComponent } from './components/successful-registration/successful-registration.component';
+import { CategoryDisplayComponent } from './components/category-display/category-display.component';
 
 
 export const routes: Routes = [
@@ -18,6 +19,7 @@ export const routes: Routes = [
     { path: 'account', component:AccountPageComponent},
     { path: 'history', component:HistoryPageComponent},
     { path: 'store/:id', component:SingleStoreComponent},
+    { path: 'category/:id', component:CategoryDisplayComponent},
     { path: '', redirectTo: 'login', pathMatch: 'full'},  
     { path: '**', component:PageNotFoundComponent}
 ];

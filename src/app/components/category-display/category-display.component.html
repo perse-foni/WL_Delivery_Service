@@ -1,0 +1,14 @@
+  <div class="container">
+    <div class="grid pt-5">
+        <div class="row">
+          @for (store of stores; track store.id) {
+          <div class="col d-inline-flex justify-content-center p-1">
+            <app-store [store]="store"/>
+          </div>
+          } @empty {
+            <app-no-stores></app-no-stores>
+          }
+        </div>
+      </div>
+  </div>
+

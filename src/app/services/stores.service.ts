@@ -1,7 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable, inject } from '@angular/core';
 import { throwError } from 'rxjs';
-import { catchError, retry } from 'rxjs/operators';
+import { catchError, map, retry } from 'rxjs/operators';
 import { Store } from '../models/store';
 
 @Injectable({
@@ -16,8 +16,16 @@ export class StoresService {
     return this.http.get<Store[]>(this.endpointUrl).pipe(
       retry(1),
       catchError((error) =>
-        throwError(() => `Oh oh.. Something went wrong ${error.status}`)
+      throwError(() => `Oh oh.. Something went wrong ${error.status}`)
       )
     );
   }
+  getStoresByCategory(category: string) {
+    return this.http.get<Store[]>(this.endpointUrl).pipe(
+      map((stores) => stores.filter((store) => store.category === category)),
+      retry(1),
+      catchError((error) => throwError(() => `Oh oh.. Something went wrong ${error.status}`))
+    );
+  }
+
 }

@@ -1,4 +1,4 @@
-<a class="nav-link" routerLink="/category/{{ category.id }}">
+<a class="nav-link" (click)="onSelectCategory(category.category)" routerLink="/category/{{ category.category }}">
   <div class="category-card">
     <img
       [src]="category.avatar"
