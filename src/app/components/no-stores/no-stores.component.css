@@ -1,0 +1,10 @@
+.button {
+    --bs-btn-border-color: #143727;
+    --bs-btn-color:  #fff;
+    --bs-btn-hover-bg: #FFCF07;
+    --bs-btn-hover-border-color: #FFCF07;
+    --bs-btn-hover-color: #143727;
+    --bs-btn-bg: #143727;
+    height: 30px;
+    padding-top: 2px;
+}
