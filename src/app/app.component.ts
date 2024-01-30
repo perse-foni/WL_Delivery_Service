@@ -1,9 +1,7 @@
-import { Component, inject } from '@angular/core';
+import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterOutlet } from '@angular/router';
 import { NgxScrollTopModule } from 'ngx-scrolltop';
-import { RegistrationPageComponent } from './components/registration-page/registration-page.component';
-import { LandingPageComponent } from './components/landing-page/sign-in-form/landing-page.component';
 import { NavigationBarComponent } from './components/navigation-bar/navigation-bar.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { CartComponent } from './components/cart/cart.component';
@@ -19,11 +17,9 @@ import { SuccessfulRegistrationComponent } from './components/successful-registr
     NgxScrollTopModule,
     NavigationBarComponent,
     FooterComponent,
-    RegistrationPageComponent,
-    LandingPageComponent, 
     CartComponent,
     EmptyCartComponent,
-    SuccessfulRegistrationComponent
+    SuccessfulRegistrationComponent,
   ],
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css'],
