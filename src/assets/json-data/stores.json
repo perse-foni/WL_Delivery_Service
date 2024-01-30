@@ -2,7 +2,7 @@
   {
     "id": 1,
     "name": "McDonald's",
-    "category": "FAST_FOOD",
+    "category": "Burger",
     "address": "Syntagma 15",
     "description": "I'm lovin' it!",
     "avatar": "https://imageproxy.wolt.com/mes-image/9dda58a4-a474-4e8e-a9ba-9da30a3a0d03/b7e18341-6f6e-413c-a3ee-93e31247b2a3",
@@ -93,7 +93,7 @@
   {
     "id": 2,
     "name": "StreetWok",
-    "category": "ASIAN",
+    "category": "Asian",
     "address": "Glyfada Str. 203",
     "description": "Asian Bites!",
     "avatar": "https://imageproxy.wolt.com/venue/613a04789f1e5058b81ab307/064ccbfe-1b70-11ec-b085-0efd9af55f85__48a5981.jpg",
@@ -152,7 +152,7 @@
   {
     "id": 3,
     "name": "Nanou Donuts House",
-    "category": "DONUTS",
+    "category": "Donuts",
     "address": "Ampelokipous 23rd Av.",
     "description": "Fresh authentic Greek donuts!",
     "avatar": "https://imageproxy.wolt.com/mes-image/5be9927a-59fe-4b7a-b1e7-6db52e7e2b00/c86f3085-5bdb-42e3-a340-1e7da8d72b73",
@@ -211,7 +211,7 @@
   {
     "id": 4,
     "name": "Coffee Lab",
-    "category": "COFFEE",
+    "category": "Coffee",
     "address": "Athinaion 15",
     "description": "Croissants at their best...",
     "avatar": "https://imageproxy.wolt.com/mes-image/35d65592-ec79-423b-8921-ecb09cae52ba/a9bd9221-1631-4a00-92e4-5bde7b171e95",
@@ -294,7 +294,7 @@
   {
     "id": 5,
     "name": "Gregory",
-    "category": "COFFEE",
+    "category": "Coffee",
     "address": "Agisilaou 222",
     "description": "The ones who make your day, you know by name!",
     "avatar": "https://imageproxy.wolt.com/mes-image/5be9a33c-b685-4a01-963b-2d8368f4e898/b2a3b216-d22c-4744-a16f-594d7ac64c2a",
@@ -369,7 +369,7 @@
   {
     "id": 6,
     "name": "Naanwich",
-    "category": "INDIAN",
+    "category": "Indian",
     "address": "Ermou 115",
     "description": "Unique Indian dishes!",
     "avatar": "https://imageproxy.wolt.com/venue/5f291b41cf039c1a82d94db4/68a90046-d644-11ea-b90d-166297db8e86__z3a7456_edit.jpg",
@@ -436,7 +436,7 @@
   {
     "id": 7,
     "name": "Pueblo Chido Cocina Mexicana",
-    "category": "MEXICAN",
+    "category": "Mexican",
     "address": "Leoforos Eleftheriou Venizelou 24",
     "description": "Original mexican meals!",
     "avatar": "https://imageproxy.wolt.com/mes-image/c8df6cd9-439f-4277-8314-db1db890a048/0687e8bc-14ec-4567-b51a-ea9cf2db89c6",
@@ -570,7 +570,7 @@
   {
     "id": 9,
     "name": "The Breakfast Club",
-    "category": "BREAKFAST",
+    "category": "Breakfast",
     "address": "Pl. Filikis Eterias 19",
     "description": "Quality coffee and deliciou brunch!",
     "avatar": "https://imageproxy.wolt.com/venue/61dd57f3784679aea8b35cdf/16061024-784e-11ec-a962-c6e610a6f33f__48a6689.jpg",
@@ -637,7 +637,7 @@
   {
     "id": 10,
     "name": "Cafe-Cafe",
-    "category": "BREAKFAST",
+    "category": "Breakfast",
     "address": "Emiliou Veaki 60",
     "description": "Delicious breakfast and brunch!",
     "avatar": "https://imageproxy.wolt.com/venue/5f1979f1814252425a1893e6/86d5867a-6bed-11ed-a49a-62286f480b2a_cafe_cafe__________________________060.jpg",
@@ -753,5 +753,46 @@
     "description": "Goody's classics",
     "avatar": "https://imageproxy.wolt.com/mes-image/6338b43f-4ca3-488d-8f2e-65f1a0a166fa/c497df19-c555-447c-be44-e4ec1fcc48f8?w=1920",
     "rating": "4"
+  },
+
+  {
+    "id": 106,
+    "name": "Ortansia's Coffee & Breakfast",
+    "category": "Breakfast",
+    "address": "Leof. Kifisias 105",
+    "description": "Very delicious breakfast along with an excellent variety of coffees!",
+    "avatar": "https://imageproxy.wolt.com/venue/61d458a842c470a113232eb4/55419de2-7774-11ec-9fe6-62fcd58735e1_gxg_1472.jpg",
+    "rating": "4.5"
+  },
+
+  {
+    "id": 107,
+    "name": "Poco a Poco",
+    "category": "Breakfast",
+    "address": "Loukianou 13 Kolonaki",
+    "description": "Tasty breakfast and brunch and more tasty dishes all day!",
+    "avatar": "https://imageproxy.wolt.com/venue/5ec3da26f3360f4279772844/13a5d008-ae11-11ee-ac42-4e58fd3065a0_list_5.jpg",
+    "rating": "4"
+  },
+
+  {
+    "id": 108,
+    "name": "Mayor",
+    "category": "Coffee",
+    "address": "Pl. Filikis Eterias 19, Kolonaki",
+    "description": "Next level Mediterranean and gourmet cuisine at Mayor!",
+    "avatar": "https://imageproxy.wolt.com/venue/5c8fa37ba5d93d000bc63768/5280ef0a-5223-11ee-af5a-029f73b7b1c3_pat_0197.jpg",
+    "rating": "4"
+  },
+
+  {
+    "id": 109,
+    "name": "Cultivos Coffee Pagrati",
+    "category": "Coffee",
+    "address": "Filolaou 158, Ag. Artemios",
+    "description": "Exceptional microlot coffees by taf and tempting healthy snacks!",
+    "avatar": "https://imageproxy.wolt.com/venue/6294a0448b53abfd23f96c25/23afbb2c-e17a-11ec-8f9d-ee99daf15073_list_1.jpg",
+    "rating": "4"
   }
 ]
+ 
