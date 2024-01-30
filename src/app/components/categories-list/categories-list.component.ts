@@ -12,7 +12,7 @@ import { CarouselModule } from 'primeng/carousel';
     CommonModule,
     CategoryComponent,
     NgxSkeletonLoaderModule,
-    CarouselModule,
+    CarouselModule, NgxSkeletonLoaderModule
   ],
   templateUrl: './categories-list.component.html',
   styleUrl: './categories-list.component.css',
@@ -20,7 +20,7 @@ import { CarouselModule } from 'primeng/carousel';
 export class CategoriesListComponent {
   service = inject(CategoryService);
   categoriesList: any = [];
-  skeletons: number[] = Array(5);
+  skeletons: number[] = Array(6);
 
   ngOnInit() {
     this.service.getCategory().subscribe({
@@ -32,7 +32,5 @@ export class CategoriesListComponent {
       },
     });
   }
-
-
 }
 
